@@ -3,6 +3,7 @@
   "features": [{
       "type": "Feature",
       "properties": {
+        "location": "Bowles",
         "name": "Bowles",
         "slopeType": "dry",
         "surface": "matting",
@@ -17,6 +18,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Aldershot",
         "name": "Aldershot",
         "slopeType": "dry",
         "surface": "matting",
@@ -31,6 +33,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Southampton",
         "name": "Southampton",
         "slopeType": "dry",
         "surface": "carpet",
@@ -45,6 +48,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Brentwood",
         "name": "Brentwood",
         "slopeType": "dry",
         "surface": "matting",
@@ -59,6 +63,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Chatham",
         "name": "Chatham",
         "slopeType": "dry",
         "surface": "carpet",
@@ -73,6 +78,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Guildford",
         "name": "Guildford",
         "slopeType": "dry",
         "surface": "matting",
@@ -87,6 +93,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Folkestone",
         "name": "Folkestone",
         "slopeType": "dry",
         "surface": "matting",
@@ -101,6 +108,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Knock Hatch",
         "name": "Knock Hatch",
         "slopeType": "dry",
         "surface": "carpet",
@@ -115,6 +123,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Sandown",
         "name": "Sandown",
         "slopeType": "dry",
         "surface": "matting",
@@ -129,6 +138,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Welwyn",
         "name": "Welwyn",
         "slopeType": "dry",
         "surface": "matting",
@@ -143,7 +153,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Hemel Hempstead",
+        "location": "Hemel Hempstead",
+        "name": "The Snow Centre",
         "slopeType": "indoor",
         "surface": "indoor snow",
         "address": "Line1\nLine2\nLine3\nLine4\n",
@@ -157,6 +168,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Christchurch",
         "name": "Snowtrax",
         "slopeType": "dry",
         "surface": "matting",
@@ -171,6 +183,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Bracknell",
         "name": "Bracknell",
         "slopeType": "dry",
         "surface": "matting",
@@ -185,7 +198,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Milton Keynes",
+        "location": "Milton Keynes",
+        "name": "Snozone Milton Keynes",
         "slopeType": "indoor",
         "surface": "indoor snow",
         "address": "Line1\nLine2\nLine3\nLine4\n",
@@ -199,6 +213,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Norwich",
         "name": "Norwich",
         "slopeType": "dry",
         "surface": "matting",
@@ -213,7 +228,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Manchester",
+        "location": "Manchester",
+        "name": "Manchester Chill Factor<em>e</em>",
         "slopeType": "indoor",
         "surface": "indoor snow",
         "address": "Line1\nLine2\nLine3\nLine4\n",
@@ -227,6 +243,7 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Gloucester",  
         "name": "Gloucester",
         "slopeType": "dry",
         "surface": "matting",

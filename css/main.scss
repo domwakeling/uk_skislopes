@@ -226,13 +226,12 @@ path.country {
     fill: lighten($color__orange, 30%);
 }
 
-// path.slopes {
-path.dry {
+path.slopes.dry {
     fill: $color__blue;
 }
 
-path.indoor {
-    fill: #red;
+path.slopes.indoor {
+    fill: #f00;
 }
 
 /* STYLES FOR MODAL */

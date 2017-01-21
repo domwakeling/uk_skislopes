@@ -51,6 +51,8 @@ d3.queue(2)
     });
 
 function renderMap(topology, slopes) {
+    console.log(topology);
+    console.log(slopes);
     g.selectAll("path.country")
         .data(topology.features)
         .enter()
@@ -80,24 +82,30 @@ function renderslopes(slopes) {
         .append("path")
         .datum(function(d) {
             var slopeObj = circle.radius(0.07).center(d.geometry.coordinates)();
+            slopeObj.location = d.properties.location;
             slopeObj.name = d.properties.name;
+            slopeObj.slopeType = d.properties.slopeType;
+            slopeObj.surface = d.properties.surface;
+            slopeObj.address = d.properties.address.replace(/\n/g, '<br/>');
+            slopeObj.slopeURL = d.properties.slopeURL;
             return slopeObj;
         })
-        .attr("class", "slopes " + d.properties.type)
+        .attr("class", "slopes")
+        .attr("class", function(d) {return "slopes " + d.slopeType})
         .attr("d", path)
 
-        .on("mousedown", function(d) {
-            $('#modalTitle').html(d.name);
-            $('#modalSurface').html(d.surface);
-            $('#modalAddress').html(d.adress);
-            $('#modalURL').html(d.URL);
+        .on("mousedown", function(slopeObj) {
+            $('#modalTitle').html(slopeObj.name);
+            $('#modalSurface').html(slopeObj.surface);
+            $('#modalAddress').html(slopeObj.address);
+            $('#modalURL').html(slopeObj.slopeURL);
             setTimeout(function() {
                 modal.show()
             }, 50);
         })
 
         .on("mouseover", function(d) {
-            var str = d.name;
+            var str = d.location;
             div.transition()
                 .duration(200)
                 .style("opacity", 1.0);
