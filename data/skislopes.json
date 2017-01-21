@@ -64,11 +64,11 @@
       "type": "Feature",
       "properties": {
         "location": "Chatham",
-        "name": "Chatham",
+        "name": "Chatham Ski &amp; Snowboard Centre",
         "slopeType": "dry",
         "surface": "Carpet",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Capstone Park\nGillingham\nKent\nME7 3JH",
+        "slopeURL": "http://www.jnlchatham.co.uk/"
       },
       "geometry": {
         "type": "Point",
@@ -79,11 +79,11 @@
       "type": "Feature",
       "properties": {
         "location": "Guildford",
-        "name": "Guildford",
+        "name": "Guildford Ski Slope",
         "slopeType": "dry",
         "surface": "Matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Larch Avenue\nGuildford\nSurrey\nGU1 1JY",
+        "slopeURL": "http://guildfordskislope.co.uk/"
       },
       "geometry": {
         "type": "Point",
@@ -94,11 +94,11 @@
       "type": "Feature",
       "properties": {
         "location": "Folkestone",
-        "name": "Folkestone",
+        "name": "Folkestone Sports Centre",
         "slopeType": "dry",
         "surface": "Matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Radnor Park Avenue\nFolkestone\nKent\nCT19 5HX",
+        "slopeURL": "http://www.folkestonesportscentre.co.uk/facilities-ski.asp"
       },
       "geometry": {
         "type": "Point",
@@ -108,12 +108,12 @@
     {
       "type": "Feature",
       "properties": {
-        "location": "Knock Hatch",
-        "name": "Knock Hatch",
+        "location": "Knockhatch",
+        "name": "Knockhatch Ski &amp; Snowboard Centre",
         "slopeType": "dry",
         "surface": "Carpet",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Hailsham Bypass\nHailsham\nBN27 3PR",
+        "slopeURL": "http://www.knockhatchskicentre.co.uk/"
       },
       "geometry": {
         "type": "Point",
@@ -124,11 +124,11 @@
       "type": "Feature",
       "properties": {
         "location": "Sandown",
-        "name": "Sandown",
+        "name": "Sandown Sports Club",
         "slopeType": "dry",
         "surface": "Matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "More Lane\nEsher\nSurrey\nKT10 8AN",
+        "slopeURL": "http://sandownsports.co.uk/ski/"
       },
       "geometry": {
         "type": "Point",
@@ -139,11 +139,11 @@
       "type": "Feature",
       "properties": {
         "location": "Welwyn",
-        "name": "Welwyn",
+        "name": "Gosling Ski &amp; Board Centre",
         "slopeType": "dry",
         "surface": "Matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Gosling Stadium\nStanborough Rd\nWelwyn\nWelwyn Garden City\nAL8 6XE",
+        "slopeURL": "http://www.better.org.uk/leisure-centre/welwyn/gosling-sports-park/facilities"
       },
       "geometry": {
         "type": "Point",
@@ -157,8 +157,8 @@
         "name": "The Snow Centre",
         "slopeType": "indoor",
         "surface": "Indoor Snow",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "St Albans Hill\nHemel Hempstead\nHertfordshire\nHP3 9NH",
+        "slopeURL": "http://www.thesnowcentre.com/"
       },
       "geometry": {
         "type": "Point",
@@ -172,8 +172,8 @@
         "name": "Snowtrax",
         "slopeType": "dry",
         "surface": "Matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Matchams Lane\nHurn\nChristchurch\nDorset\nBH23 6AW",
+        "slopeURL": "http://www.snowtrax.eu/"
       },
       "geometry": {
         "type": "Point",
@@ -184,11 +184,11 @@
       "type": "Feature",
       "properties": {
         "location": "Bracknell",
-        "name": "Bracknell",
+        "name": "Bracknell Ski Centre &amp; Ice Rink",
         "slopeType": "dry",
         "surface": "Matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "John Nike Leisuresport Complex\nJohn Nike Way\nBracknell\nBerkshire\nRG12 8TN",
+        "slopeURL": "https://www.jnlbracknell.co.uk/"
       },
       "geometry": {
         "type": "Point",
@@ -202,8 +202,8 @@
         "name": "Snozone Milton Keynes",
         "slopeType": "indoor",
         "surface": "Indoor Snow",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Snozone Xscape\n602 Marlborough Gate\nCentral Milton Keynes\nMK9 3XS",
+        "slopeURL": "https://www.snozoneuk.com/"
       },
       "geometry": {
         "type": "Point",
@@ -213,12 +213,27 @@
     {
       "type": "Feature",
       "properties": {
+        "location": "Castleford",
+        "name": "Snozone Castleford",
+        "slopeType": "indoor",
+        "surface": "Indoor Snow",
+        "address": "Snozone Xscape\nCastleford Colorado Way\nGlasshoughton\nCastleford\nWest Yorkshire\nWF10 4TA",
+        "slopeURL": "https://www.snozoneuk.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.3422954, 53.7103725]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "location": "Norwich",
-        "name": "Norwich",
+        "name": "Norfolk Dry Ski Slope",
         "slopeType": "dry",
         "surface": "Matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Whitlingham Lane\nTrowse\nNorwich\nNorfolk\nNR14 8TW",
+        "slopeURL": "https://www.norfolksnowsports.com/"
       },
       "geometry": {
         "type": "Point",
@@ -232,8 +247,8 @@
         "name": "Manchester Chill Factor<sup>e</sup>",
         "slopeType": "indoor",
         "surface": "Indoor Snow",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Trafford Quays Leisure Village\nTrafford Way\nManchester\nM41 7JA",
+        "slopeURL": "http://www.chillfactore.com/"
       },
       "geometry": {
         "type": "Point",
@@ -244,15 +259,60 @@
       "type": "Feature",
       "properties": {
         "location": "Gloucester",
-        "name": "Gloucester",
+        "name": "Gloucester Ski &amp; Snowboard Centre",
         "slopeType": "dry",
         "surface": "Matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "address": "Matson Lane\nRobinswood Hill\nGloucester\nGL4 6EA",
+        "slopeURL": "http://www.gloucesterski.com/"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [-2.221515, 51.834901]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Ipswich",
+        "name": "Suffolk Ski Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Suffolk Leisure Park\nBourne Hill\nWherstead\nIpswich\nIP2 8NQ",
+        "slopeURL": "http://www.suffolkskicentre.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.145181, 52.028229]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Plymouth",
+        "name": "Plymouth Ski &amp; Snowboard Centre",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "Alpine Park\nPlymouth\nDevon\nPL6 8LW",
+        "slopeURL": "https://www.jnlplymouth.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.091785, 50.397446]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Llandudno",
+        "name": "Llandudno Ski &amp; Snowboard Centre",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "John Nike Leisuresport Complex\nGreat Orme\nLlandudno\nLL30 2QL",
+        "slopeURL": "http://www.jnlllandudno.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.8364065, 53.3314624]
       }
     }
   ]
