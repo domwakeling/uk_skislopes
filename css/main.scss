@@ -22,8 +22,9 @@ $color__mid-grey: #444;
 $color__body-font-color: darken($color__orange, 45%);
 $color__title-font-color: darken($color__orange, 0%);
 $color__link-font-color: $color__orange;
+$border__basic: 1px solid $color__orange;
 @mixin outline-me {
-    border: 1px solid $color__orange;
+    border: $border__basic;
 }
 /* STRUCTURE */
 $structure__font-pad_horiz: 10px;
@@ -123,7 +124,7 @@ em {
 
 sup {
     vertical-align: super;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 a {
@@ -262,7 +263,6 @@ path.slopes.indoor {
     background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content/Box */
 .modal-content {
     background-color: #eee;
     margin: 120px auto; // 15% from the top and centered
@@ -270,13 +270,13 @@ path.slopes.indoor {
     border: 1px solid #999;
     border-radius: 5px;
     @include for-phone-only {
-        width: 80%;
+        width: 70%;
     };
     @include for-tablet-portait-only {
-        width: 80%;
+        width: 420px;
     };
     @include for-tablet-landscape-up {
-        width: 720px;
+        width: 420px;
     };
 }
 
@@ -285,10 +285,26 @@ path.slopes.indoor {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    line-height: 1;
     &:hover,
     &:focus {
         color: black;
         text-decoration: none;
         cursor: pointer;
+    }
+}
+
+table {
+    tr.table-content {
+        font-size: 0.9rem;
+        border-top: $border__basic;
+        td.table-cat {
+            padding-top: 4px;
+            padding-right: 0.5em;
+            font-weight: 500;
+        }
+        td.cell-content {
+            padding-bottom: 4px;
+        }
     }
 }

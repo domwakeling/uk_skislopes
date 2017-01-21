@@ -6,8 +6,8 @@ closeSpan.on("click", function() {
     modal.hide();
 });
 
-$(document).on("mousedown", function() {
-    if (event.target != modal && modal.is(":visible")) {
+$(document).on("mousedown", function(e) {
+    if(modal.is(":visible") && event.target.id == "slopeModal") {
         modal.hide();
     }
-});
+})

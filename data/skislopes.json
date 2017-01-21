@@ -4,11 +4,11 @@
       "type": "Feature",
       "properties": {
         "location": "Bowles",
-        "name": "Bowles",
+        "name": "Bowles Outdoor Centre",
         "slopeType": "dry",
-        "surface": "matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "surface": "Matting",
+        "address": "Sandhill Lane\nEridge Green\nTunbridge Wells\nTN3 9LW",
+        "slopeURL": "http://www.bowles.ac/"
       },
       "geometry": {
         "type": "Point",
@@ -19,11 +19,11 @@
       "type": "Feature",
       "properties": {
         "location": "Aldershot",
-        "name": "Aldershot",
+        "name": "Alpine Snowsports Aldershot",
         "slopeType": "dry",
-        "surface": "matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "surface": "Matting",
+        "address": "Gallwey Road\nAldershot\nGU11 2DD",
+        "slopeURL": "http://activenation.org.uk/outdoor_venue/alpine-snowsports-aldershot/"
       },
       "geometry": {
         "type": "Point",
@@ -34,11 +34,11 @@
       "type": "Feature",
       "properties": {
         "location": "Southampton",
-        "name": "Southampton",
+        "name": "Alpine Sports Southampton",
         "slopeType": "dry",
-        "surface": "carpet",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "surface": "Carpet",
+        "address": "Thornhill Road\nBassett\nSouthampton\nSO16 7AY",
+        "slopeURL": "http://activenation.org.uk/outdoor_venue/alpine-snowsports-southampton/"
       },
       "geometry": {
         "type": "Point",
@@ -49,11 +49,11 @@
       "type": "Feature",
       "properties": {
         "location": "Brentwood",
-        "name": "Brentwood",
+        "name": "Brentwood Park Ski &amp; Snow Centre",
         "slopeType": "dry",
-        "surface": "matting",
-        "address": "Line1\nLine2\nLine3\nLine4\n",
-        "slopeURL": "http://www.foo"
+        "surface": "Matting",
+        "address": "Warley Gap\nBrentwood\nEssex\nCM13 3DP",
+        "slopeURL": "http://www.brentwoodskicentre.co.uk/"
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +66,7 @@
         "location": "Chatham",
         "name": "Chatham",
         "slopeType": "dry",
-        "surface": "carpet",
+        "surface": "Carpet",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -81,7 +81,7 @@
         "location": "Guildford",
         "name": "Guildford",
         "slopeType": "dry",
-        "surface": "matting",
+        "surface": "Matting",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -96,7 +96,7 @@
         "location": "Folkestone",
         "name": "Folkestone",
         "slopeType": "dry",
-        "surface": "matting",
+        "surface": "Matting",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -111,7 +111,7 @@
         "location": "Knock Hatch",
         "name": "Knock Hatch",
         "slopeType": "dry",
-        "surface": "carpet",
+        "surface": "Carpet",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -126,7 +126,7 @@
         "location": "Sandown",
         "name": "Sandown",
         "slopeType": "dry",
-        "surface": "matting",
+        "surface": "Matting",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -141,7 +141,7 @@
         "location": "Welwyn",
         "name": "Welwyn",
         "slopeType": "dry",
-        "surface": "matting",
+        "surface": "Matting",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -156,7 +156,7 @@
         "location": "Hemel Hempstead",
         "name": "The Snow Centre",
         "slopeType": "indoor",
-        "surface": "indoor snow",
+        "surface": "Indoor Snow",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -171,7 +171,7 @@
         "location": "Christchurch",
         "name": "Snowtrax",
         "slopeType": "dry",
-        "surface": "matting",
+        "surface": "Matting",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -186,7 +186,7 @@
         "location": "Bracknell",
         "name": "Bracknell",
         "slopeType": "dry",
-        "surface": "matting",
+        "surface": "Matting",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -201,7 +201,7 @@
         "location": "Milton Keynes",
         "name": "Snozone Milton Keynes",
         "slopeType": "indoor",
-        "surface": "indoor snow",
+        "surface": "Indoor Snow",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -216,7 +216,7 @@
         "location": "Norwich",
         "name": "Norwich",
         "slopeType": "dry",
-        "surface": "matting",
+        "surface": "Matting",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -231,7 +231,7 @@
         "location": "Manchester",
         "name": "Manchester Chill Factor<sup>e</sup>",
         "slopeType": "indoor",
-        "surface": "indoor snow",
+        "surface": "Indoor Snow",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },
@@ -246,7 +246,7 @@
         "location": "Gloucester",
         "name": "Gloucester",
         "slopeType": "dry",
-        "surface": "matting",
+        "surface": "Matting",
         "address": "Line1\nLine2\nLine3\nLine4\n",
         "slopeURL": "http://www.foo"
       },

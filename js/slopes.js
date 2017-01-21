@@ -98,7 +98,7 @@ function renderslopes(slopes) {
             $('#modalTitle').html('<strong>' + slopeObj.name + '</strong>');
             $('#modalSurface').html(slopeObj.surface);
             $('#modalAddress').html(slopeObj.address);
-            $('#modalURL').html(slopeObj.slopeURL);
+            $('#modalURL').html('<a href="' + slopeObj.slopeURL + '" target="_blank">Link</a>');
             setTimeout(function() {
                 modal.show()
             }, 50);
