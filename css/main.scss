@@ -1,0 +1,277 @@
+/* FONTS */
+@import url( 'https://fonts.googleapis.com/css?family=Raleway:300,500');
+@mixin font__head-font {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+@mixin font__body-font {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+$font__body-font-size: 18px;
+$font__h1-font-size: 2.2rem;
+$font__h2-font-size: 1.8rem;
+$font__h3-font-size: 1.5rem;
+$font__h4-font-size: 1.3rem;
+$font__line-height-body: 1.5;
+/* COLORS */
+$color__bg-color: #ccc;
+$color__orange: hsl(33, 89%, 55%);
+$color__blue: #356291;
+$color__mid-grey: #444;
+$color__body-font-color: darken($color__orange, 45%);
+$color__title-font-color: darken($color__orange, 0%);
+$color__link-font-color: $color__orange;
+@mixin outline-me {
+    border: 1px solid $color__orange;
+}
+/* STRUCTURE */
+$structure__font-pad_horiz: 10px;
+/* SIZE MIXINS 600-900-1200-1800 */
+@mixin for-phone-only {
+     @media (max-width: 599px){
+        @content;
+    }
+}
+@mixin for-tablet-portrait-up {
+     @media (min-width: 600px){
+        @content;
+    }
+}
+@mixin for-tablet-portait-only {
+     @media (min-width: 600px) and (max-width: 899px){
+        @content;
+    }
+}
+@mixin for-tablet-landscape-up {
+     @media (min-width: 900px){
+        @content;
+    }
+}
+@mixin for-tablet-landscape-only {
+     @media (min-width: 900px) and (max-width: 1199px){
+        @content;
+    }
+}
+@mixin for-desktop-up {
+     @media (min-width: 1200px){
+        @content;
+    }
+}
+@mixin for-desktop-only {
+     @media (min-width: 1200px) and (max-width: 1799px){
+        @content;
+    }
+}
+@mixin for-big-desktop-up {
+     @media (min-width: 1800px){
+        @content;
+    }
+}
+
+body {
+    @include font__body-font;
+    font-size: $font__body-font-size;
+    line-height: $font__line-height-body;
+    color: $color__body-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font__head-font;
+    padding-left: $structure__font-pad_horiz;
+    padding-right: $structure__font-pad_horiz;
+    color: $color__title-font-color;
+}
+
+h1 {
+    font-size: $font__h1-font-size;
+}
+
+h2 {
+    font-size: $font__h2-font-size;
+}
+
+h3 {
+    font-size: $font__h3-font-size;
+}
+
+h4 {
+    font-size: $font__h4-font-size;
+}
+
+p {
+    padding-left: $structure__font-pad_horiz;
+    padding-right: $structure__font-pad_horiz;
+}
+
+p.lead {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: $color__link-font-color;
+
+    &:hover {
+        color: darken($color__link-font-color, 20%);
+    }
+}
+
+.container {
+    @include for-tablet-landscape-up {
+        width: 900px;
+        margin: 0 auto;
+    }
+}
+
+.mast-head {
+    background-color: darken($color__orange, 50%);
+    p {
+        color: white;
+        font-size: 1.5rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.content-title {
+    padding-top: $structure__font-pad_horiz;
+    padding-bottom: $structure__font-pad_horiz;
+}
+
+.content-main {
+    @include outline-me;
+    float: left;
+    @include for-phone-only {
+        width: 100%;
+    }
+    @include for-tablet-portait-only {
+        width: 100%;
+    }
+    @include for-tablet-landscape-up {
+        width: 580px;
+        height: 600px;
+    }
+}
+
+.advert {
+    background-color: $color__bg-color;
+    @include for-phone-only {
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    @include for-tablet-portait-only {
+        // clear: both;
+        height: 90px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    @include for-tablet-landscape-up {
+        float: right;
+        margin-left: 20px;
+        width: 300px;
+        height: 600px;
+    }
+}
+
+.copyright {
+    text-align: right;
+    padding-right: $structure__font-pad_horiz;
+    font-size: 0.8rem;
+    @include for-phone-only {
+        position: absolute;
+        bottom: 105px;
+        width: 100%;
+    }
+    @include for-tablet-portait-only {
+        position: absolute;
+        bottom: 95px;
+        width: 100%;
+    }
+    @include for-tablet-landscape-up {
+        clear: both;
+        padding-top: $structure__font-pad_horiz;
+    }
+}
+
+/* STYLES FOR SLOPES */
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 4px;
+    font-size: 0.75rem;
+    background: lightgrey;
+    border: 0;
+    border-radius: 5px;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+}
+
+path {
+    stroke: white;
+    stroke-width: 0.5px;
+    // fill: lighten($color__orange, 20%);
+}
+
+path.country {
+    fill: lighten($color__orange, 30%);
+}
+
+path.slopes {
+    fill: $color__blue;
+}
+
+/* STYLES FOR MODAL */
+
+.modal { // background
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #eee;
+    margin: 120px auto; // 15% from the top and centered
+    padding: 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    @include for-phone-only {
+        width: 80%;
+    };
+    @include for-tablet-portait-only {
+        width: 80%;
+    };
+    @include for-tablet-landscape-up {
+        width: 720px;
+    };
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
