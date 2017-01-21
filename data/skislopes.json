@@ -3,7 +3,11 @@
   "features": [{
       "type": "Feature",
       "properties": {
-        "name": "Bowles"
+        "name": "Bowles",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
       },
       "geometry": {
         "type": "Point",
@@ -13,7 +17,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Aldershot"
+        "name": "Aldershot",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
       },
       "geometry": {
         "type": "Point",
@@ -23,7 +31,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Southampton"
+        "name": "Southampton",
+        "type": "dry",
+        "surface": "carpet",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
       },
       "geometry": {
         "type": "Point",
@@ -33,7 +45,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Brentwood"
+        "name": "Brentwood",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
       },
       "geometry": {
         "type": "Point",
@@ -43,7 +59,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Chatham"
+        "name": "Chatham",
+        "type": "dry",
+        "surface": "carpet",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
       },
       "geometry": {
         "type": "Point",
@@ -53,8 +73,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Guildford"
-    },
+        "name": "Guildford",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.581095, 51.256134]
@@ -63,8 +87,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Folkestone"
-    },
+        "name": "Folkestone",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [1.167531, 51.086644]
@@ -73,8 +101,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Knock Hatch"
-    },
+        "name": "Knock Hatch",
+        "type": "dry",
+        "surface": "carpet",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [0.241074, 50.862277]
@@ -83,8 +115,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Sandown"
-    },
+        "name": "Sandown",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.364979, 51.372779]
@@ -93,8 +129,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Welwyn"
-    },
+        "name": "Welwyn",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.212710, 51.791179]
@@ -103,8 +143,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Hemel Hempstead"
-    },
+        "name": "Hemel Hempstead",
+        "type": "indoor",
+        "surface": "indoor snow",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.458958, 51.745684]
@@ -113,8 +157,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Snowtrax"
-    },
+        "name": "Snowtrax",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-1.819192, 50.794259]
@@ -123,8 +171,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bracknell"
-    },
+        "name": "Bracknell",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.788097, 51.414617]
@@ -133,8 +185,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Milton Keynes"
-    },
+        "name": "Milton Keynes",
+        "type": "indoor",
+        "surface": "indoor snow",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.747291, 52.041935]
@@ -143,8 +199,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Norwich"
-    },
+        "name": "Norwich",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [1.320784, 52.614866]
@@ -153,8 +213,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Manchester"
-    },
+        "name": "Manchester",
+        "type": "indoor",
+        "surface": "indoor snow",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-2.361093, 53.468265]
@@ -163,8 +227,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Gloucester"
-    },
+        "name": "Gloucester",
+        "type": "dry",
+        "surface": "matting",
+        "address": "Line1\nLine2\nLine3\nLine4\n",
+        "URL": "http://www.foo"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-2.221515, 51.834901]

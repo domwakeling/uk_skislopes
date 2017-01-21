@@ -1,10 +1,10 @@
 var mouseOrig;
 var mouseCurr;
 var anglesCurr = [4.5, -54.65, -2];
-var zoomCurr = 3250;
-var zoomMin = 3250;
+var zoomCurr = 3250; // works with 450-wide, change in main.js for viewport size
+var zoomMin = 3250; // works with 450-wide, change in main.js for viewport size
 var zoomMax = 10000;
-var mSc = 20; //mouse scale for rotations
+var mSc = 20; //mouse scale for rotations - higher = less sensitive
 var zoomFac = 200; // factor for zoom sensitivity (higher = less sensitive)
 
 // arbitrary values here, they will be replaced once document loads
@@ -83,11 +83,14 @@ function renderslopes(slopes) {
             slopeObj.name = d.properties.name;
             return slopeObj;
         })
-        .attr("class", "slopes")
+        .attr("class", "slopes " + d.properties.type)
         .attr("d", path)
 
         .on("mousedown", function(d) {
-            $('#modalText').html(d.name);
+            $('#modalTitle').html(d.name);
+            $('#modalSurface').html(d.surface);
+            $('#modalAddress').html(d.adress);
+            $('#modalURL').html(d.URL);
             setTimeout(function() {
                 modal.show()
             }, 50);

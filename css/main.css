@@ -137,8 +137,11 @@ path {
 path.country {
   fill: #fbdcb7; }
 
-path.slopes {
+path.dry {
   fill: #356291; }
+
+path.indoor {
+  fill: #red; }
 
 /* STYLES FOR MODAL */
 .modal {
