@@ -1,157 +1,174 @@
-{ "type" : "FeatureCollection",
-  "features" : [
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [0.202266, 51.076321]
-     },
-     "properties" : {
-       "name" : "Bowles"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-0.748978, 51.256425]
-     },
-     "properties" : {
-       "name" : "Aldershot"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-1.420435, 50.940115]
-     },
-     "properties" : {
-       "name" : "Southampton"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [0.294547, 51.597452]
-     },
-     "properties" : {
-       "name" : "Brentwood"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [0.559605, 51.355363]
-     },
-     "properties" : {
-       "name" : "Chatham"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-0.581095, 51.256134]
-     },
-     "properties" : {
-       "name" : "Guildford"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [1.167531, 51.086644]
-     },
-     "properties" : {
-       "name" : "Folkestone"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [0.241074, 50.862277]
-     },
-     "properties" : {
-       "name" : "Knock Hatch"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-0.364979, 51.372779]
-     },
-     "properties" : {
-       "name" : "Sandown"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-0.212710, 51.791179]
-     },
-     "properties" : {
-       "name" : "Welwyn"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-0.458958, 51.745684]
-     },
-     "properties" : {
-       "name" : "Hemel Hempstead"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-1.819192, 50.794259]
-     },
-     "properties" : {
-       "name" : "Snowtrax"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-0.788097, 51.414617]
-     },
-     "properties" : {
-       "name" : "Bracknell"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-0.747291, 52.041935]
-     },
-     "properties" : {
-       "name" : "Milton Keynes"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [1.320784, 52.614866]
-     },
-     "properties" : {
-       "name" : "Norwich"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-2.361093, 53.468265]
-     },
-     "properties" : {
-       "name" : "Manchester"
-     }
-   },
-   { "type" : "Feature",
-     "geometry" : {
-       "type" : "Point",
-       "coordinates" : [-2.221515, 51.834901]
-     },
-     "properties" : {
-       "name" : "Gloucester"
-     }
-   }
+{
+  "type": "FeatureCollection",
+  "features": [{
+      "type": "Feature",
+      "properties": {
+        "name": "Bowles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.202266, 51.076321]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.748978, 51.256425]
+      },
+      "properties": {
+        "name": "Aldershot"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.420435, 50.940115]
+      },
+      "properties": {
+        "name": "Southampton"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.294547, 51.597452]
+      },
+      "properties": {
+        "name": "Brentwood"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.559605, 51.355363]
+      },
+      "properties": {
+        "name": "Chatham"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.581095, 51.256134]
+      },
+      "properties": {
+        "name": "Guildford"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.167531, 51.086644]
+      },
+      "properties": {
+        "name": "Folkestone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.241074, 50.862277]
+      },
+      "properties": {
+        "name": "Knock Hatch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.364979, 51.372779]
+      },
+      "properties": {
+        "name": "Sandown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.212710, 51.791179]
+      },
+      "properties": {
+        "name": "Welwyn"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.458958, 51.745684]
+      },
+      "properties": {
+        "name": "Hemel Hempstead"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.819192, 50.794259]
+      },
+      "properties": {
+        "name": "Snowtrax"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.788097, 51.414617]
+      },
+      "properties": {
+        "name": "Bracknell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.747291, 52.041935]
+      },
+      "properties": {
+        "name": "Milton Keynes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [1.320784, 52.614866]
+      },
+      "properties": {
+        "name": "Norwich"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.361093, 53.468265]
+      },
+      "properties": {
+        "name": "Manchester"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.221515, 51.834901]
+      },
+      "properties": {
+        "name": "Gloucester"
+      }
+    }
   ]
 }
