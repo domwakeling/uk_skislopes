@@ -12,162 +12,162 @@
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Aldershot"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.748978, 51.256425]
-      },
-      "properties": {
-        "name": "Aldershot"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Southampton"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [-1.420435, 50.940115]
-      },
-      "properties": {
-        "name": "Southampton"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Brentwood"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [0.294547, 51.597452]
       },
-      "properties": {
-        "name": "Brentwood"
-      }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Chatham"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [0.559605, 51.355363]
-      },
-      "properties": {
-        "name": "Chatham"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Guildford"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.581095, 51.256134]
       },
-      "properties": {
-        "name": "Guildford"
-      }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Folkestone"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [1.167531, 51.086644]
-      },
-      "properties": {
-        "name": "Folkestone"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Knock Hatch"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [0.241074, 50.862277]
       },
-      "properties": {
-        "name": "Knock Hatch"
-      }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Sandown"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.364979, 51.372779]
       },
-      "properties": {
-        "name": "Sandown"
-      }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Welwyn"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.212710, 51.791179]
-      },
-      "properties": {
-        "name": "Welwyn"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Hemel Hempstead"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.458958, 51.745684]
-      },
-      "properties": {
-        "name": "Hemel Hempstead"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Snowtrax"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-1.819192, 50.794259]
-      },
-      "properties": {
-        "name": "Snowtrax"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Bracknell"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.788097, 51.414617]
-      },
-      "properties": {
-        "name": "Bracknell"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Milton Keynes"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-0.747291, 52.041935]
-      },
-      "properties": {
-        "name": "Milton Keynes"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Norwich"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [1.320784, 52.614866]
-      },
-      "properties": {
-        "name": "Norwich"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Manchester"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-2.361093, 53.468265]
-      },
-      "properties": {
-        "name": "Manchester"
       }
     },
     {
       "type": "Feature",
+      "properties": {
+        "name": "Gloucester"
+    },
       "geometry": {
         "type": "Point",
         "coordinates": [-2.221515, 51.834901]
-      },
-      "properties": {
-        "name": "Gloucester"
       }
     }
   ]
