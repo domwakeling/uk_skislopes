@@ -229,7 +229,7 @@
       "type": "Feature",
       "properties": {
         "location": "Manchester",
-        "name": "Manchester Chill Factor<small>e</small>",
+        "name": "Manchester Chill Factor<sup>e</sup>",
         "slopeType": "indoor",
         "surface": "indoor snow",
         "address": "Line1\nLine2\nLine3\nLine4\n",

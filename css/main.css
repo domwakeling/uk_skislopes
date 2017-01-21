@@ -47,7 +47,8 @@ strong {
 em {
   font-style: italic; }
 
-small {
+sup {
+  vertical-align: super;
   font-size: 0.8em; }
 
 a {
