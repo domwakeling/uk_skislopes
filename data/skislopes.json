@@ -54,7 +54,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [0.294547, 51.597452]
-      },
+      }
     },
     {
       "type": "Feature",
@@ -82,7 +82,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [-0.581095, 51.256134]
-      },
+      }
     },
     {
       "type": "Feature",
@@ -110,7 +110,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [0.241074, 50.862277]
-      },
+      }
     },
     {
       "type": "Feature",
@@ -124,7 +124,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [-0.364979, 51.372779]
-      },
+      }
     },
     {
       "type": "Feature",
