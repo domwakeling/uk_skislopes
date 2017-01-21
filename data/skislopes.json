@@ -229,7 +229,7 @@
       "type": "Feature",
       "properties": {
         "location": "Manchester",
-        "name": "Manchester Chill Factor<em>e</em>",
+        "name": "Manchester Chill Factor<small>e</small>",
         "slopeType": "indoor",
         "surface": "indoor snow",
         "address": "Line1\nLine2\nLine3\nLine4\n",
@@ -243,7 +243,7 @@
     {
       "type": "Feature",
       "properties": {
-        "location": "Gloucester",  
+        "location": "Gloucester",
         "name": "Gloucester",
         "slopeType": "dry",
         "surface": "matting",
