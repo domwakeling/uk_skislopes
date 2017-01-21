@@ -95,7 +95,7 @@ function renderslopes(slopes) {
         .attr("d", path)
 
         .on("mousedown", function(slopeObj) {
-            $('#modalTitle').html(slopeObj.name);
+            $('#modalTitle').html('<strong>' + slopeObj.name + '</strong>');
             $('#modalSurface').html(slopeObj.surface);
             $('#modalAddress').html(slopeObj.address);
             $('#modalURL').html(slopeObj.slopeURL);

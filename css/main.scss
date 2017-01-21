@@ -113,6 +113,18 @@ p.lead {
     font-size: 1.2rem;
 }
 
+strong {
+    font-weight: 400;
+}
+
+em {
+    font-style: italic;
+}
+
+small {
+    font-size: 0.8em;
+}
+
 a {
     text-decoration: none;
     color: $color__link-font-color;
