@@ -374,6 +374,21 @@
         "type": "Point",
         "coordinates": [-3.0366046, 51.7003343]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Silverwood",
+        "name": "Craigavon Golf &amp; Ski Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Turmoyra Lane\nLurgan\nBT66 6NG",
+        "slopeURL": "http://www.craigavonactivity.org/golf-ski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.3588769, 54.4750719]
+      }
     }
   ]
 }
