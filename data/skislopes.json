@@ -449,6 +449,51 @@
         "type": "Point",
         "coordinates": [-2.3368935, 50.6912342]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Reading",
+        "name": "Skiplex UK",
+        "slopeType": "rolling",
+        "surface": "Rolling Carpet",
+        "address": "Unit 3a\nHeadley Park 10\nHeadley Road East\nWoodley\nReading\nRG5 4SW",
+        "slopeURL": "https://www.skiplex.co.uk/location/reading/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.896995, 51.451748]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Basingstoke",
+        "name": "Skiplex Basingstoke",
+        "slopeType": "rolling",
+        "surface": "Rolling Carpet",
+        "address": "Basingstoke Leisure Park\nEuskirchen Way\nBasingstoke\nHampshire\nRG22 6PG",
+        "slopeURL": "https://www.skiplex.co.uk/location/basingstoke/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.117547, 51.263269]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Chiswick",
+        "name": "Dukes Meadows Golf Club",
+        "slopeType": "rolling",
+        "surface": "Rolling Carpet",
+        "address": "Dukes Meadows Golf & Tennis Club\nDan Mason Driven\nLondon\nW4 2SH",
+        "slopeURL": "https://www.skiplex.co.uk/location/chiswick/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.263927, 51.472468]
+      }
     }
   ]
 }
