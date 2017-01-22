@@ -314,6 +314,66 @@
         "type": "Point",
         "coordinates": [-3.8364065, 53.3314624]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Pembrey",
+        "name": "Ski Pembrey",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Pembrey Country Park\nBurry Port\nLlanelli\nSA16 0EJ",
+        "slopeURL": "http://www.discovercarmarthenshire.com/active/skiing.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.3031081, 51.6775875]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Llangrannog",
+        "name": "Llangrannog Ski Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Urdd Centre\nLlandysul\nSA44 6AE",
+        "slopeURL": "http://www.urdd.cymru/en/residential-centres/llangrannog/things-do/our-activities/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4477616, 52.162553]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Cardiff",
+        "name": "Cardiff Ski &amp; Snowboard Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Fairwater Road\nFairwater Park\nCardiff\nCF5 3JR",
+        "slopeURL": "http://skicardiff.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.2425929, 51.4919662]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Pontypool",
+        "name": "Pontypool Ski Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Pontypool Leisure Park\nPontypool\nGwent",
+        "slopeURL": "http://www.torfaenleisuretrust.co.uk/en/ski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.0366046, 51.7003343]
+      }
     }
   ]
 }
