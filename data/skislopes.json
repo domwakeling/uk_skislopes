@@ -779,6 +779,111 @@
         "type": "Point",
         "coordinates": [-2.9883711, 54.5445888]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Edinburgh",
+        "name": "Midlothian Snowsports Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Biggar Road\nHillend\nEdinburgh\nEH10 7DU",
+        "slopeURL": "https://www.midlothian.gov.uk/info/200281/snowsports_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.211753, 55.887448]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Renfrew",
+        "name": "Snow Factor",
+        "slopeType": "indoor",
+        "surface": "Indoor Snow",
+        "address": "Kings Inch Road\nBraehead\nGlasgow\nPA4 8XQ",
+        "slopeURL": "https://www.snowfactor.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.3729319, 55.8785432]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Glasgow",
+        "name": "Glasgow Ski &amp; Snowboard Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Bellahouston Park\n16 Dumbreck Rd\nGlasgow\nG41 5BW",
+        "slopeURL": "http://www.ski-glasgow.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.3167892, 55.8462608]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Newmilns",
+        "name": "Newmilns Snow &amp; Sports Complex",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "35 High Street\nNewmilns\nKA16 9EB",
+        "slopeURL": "http://skinewmilns.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.3268109, 55.6097325]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Bearsden",
+        "name": "Bearsden Ski &amp; Board Club",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "The Mound\nStockiemuir Rd\nGlasgow\nG61 3RS",
+        "slopeURL": "http://www.skibearsden.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.3436337, 55.9282615]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Glencoe",
+        "name": "Glencoe Mountain",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "Kingshouse\nGlencoe\nArgyll\nPH49 4HZ",
+        "slopeURL": "http://www.glencoemountain.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.8300757, 56.6324639]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Lecht",
+        "name": "Lecht 2090",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "Strathdon\nAberdeenshire\nAB36 8YP",
+        "slopeURL": "http://www.lecht.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.255317, 57.2008287]
+      }
     }
   ]
 }

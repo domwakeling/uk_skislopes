@@ -51,8 +51,6 @@ d3.queue(2)
     });
 
 function renderMap(topology, slopes) {
-    console.log(topology);
-    console.log(slopes);
     g.selectAll("path.country")
         .data(topology.features)
         .enter()
@@ -125,6 +123,7 @@ function zoomed() {
     zoomCurr *= (zoomFac + d3.event.deltaY) / zoomFac;
     zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
     projection.scale(zoomCurr);
+    console.log(0.065 * zoomMin / zoomCurr);
     refresh();
 }
 
