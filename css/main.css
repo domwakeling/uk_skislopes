@@ -151,10 +151,13 @@ path.slopes.dry {
   fill: #356291; }
 
 path.slopes.indoor {
-  fill: #f00; }
+  fill: darkblue; }
 
 path.slopes.rolling {
-  fill: darkblue; }
+  fill: red; }
+
+path.slopes.snow {
+  fill: green; }
 
 /* STYLES FOR MODAL */
 .modal {

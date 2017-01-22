@@ -494,6 +494,96 @@
         "type": "Point",
         "coordinates": [-0.263927, 51.472468]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Weardale",
+        "name": "Weardale Ski Club",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "DL13 1NB\n(see website for directions)",
+        "slopeURL": "http://www.skiweardale.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.2435944, 54.6964107]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Allenheads",
+        "name": "Ski-Allenheads",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "NE47 9HW\n(see website for directions)",
+        "slopeURL": "http://ski-allenheads.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.2187877, 54.8016305]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Yad Moss",
+        "name": "Yad Moss Snow Slope",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "1 mile west of CA9 3HB\n(see website for directions)",
+        "slopeURL": "http://www.yadmoss.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.355175, 54.7338859]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Carlisle",
+        "name": "Carlisle SnowSports Club",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Sandy La\nBrampton\nCA8 9BQ",
+        "slopeURL": "http://www.carlislesnowsports.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.8172488, 54.8887786]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tallington",
+        "name": "Tallington Lakes Leisure Park",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Barholm Road\nTallington\nPE9 4RJ",
+        "slopeURL": "http://www.tallington.com/land-activities/dry-ski-slope/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.3794256, 52.6700965]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Telford",
+        "name": "Telford Snowboard &amp; Ski Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Court Street\nMadeley\nTelford\nTF7 5DZ",
+        "slopeURL": "http://www.telfordandwrekinleisure.co.uk/leisureservices/homepage/54/telford_snowboard_and_ski_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.449918, 52.640538]
+      }
     }
   ]
 }
