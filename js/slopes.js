@@ -123,7 +123,6 @@ function zoomed() {
     zoomCurr *= (zoomFac + d3.event.deltaY) / zoomFac;
     zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
     projection.scale(zoomCurr);
-    console.log(0.065 * zoomMin / zoomCurr);
     refresh();
 }
 

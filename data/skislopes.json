@@ -884,6 +884,126 @@
         "type": "Point",
         "coordinates": [-3.255317, 57.2008287]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Aviemore",
+        "name": "Aviremore &amp; Glenmore Ski Shop",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "PH22 1QY\n(see website for directions)",
+        "slopeURL": "http://www.aviemoreski.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.8055067, 57.1749609]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Polmonthill",
+        "name": "Polmonthill Snowsports Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Polmont Farm\nPolmont\nFK2 0YE",
+        "slopeURL": "http://www.falkirkcommunitytrust.org/venues/polmonthill-snowsports-centre/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.688319, 55.9967175]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Loch Insh",
+        "name": "Loch Insh",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal) &amp; Matting",
+        "address": "Kincraig\nKingussie\nInverness-shire\nPH21 1NU",
+        "slopeURL": "http://www.lochinsh.com/snowsports.asp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.9426158, 57.1179028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Cairngorm",
+        "name": "Cairngorm Mountain",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "CairnGorm Ski Area\nAviemore\nPH22 1RB",
+        "slopeURL": "http://www.cairngormmountain.org/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.8041949, 57.089596]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Firpark",
+        "name": "Dirpark Ski Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Firpark\nTillicoultry\nFK13 6PL",
+        "slopeURL": "http://www.clacksweb.org.uk/culture/firparkskicentre/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.7410647, 56.1572833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Glenshee",
+        "name": "Glenshee Ski &amp; Snowboard Centre",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "Cairnwell\nBraemar\nAberdeenshire\nAB35 5XU",
+        "slopeURL": "http://www.ski-glenshee.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.417628, 56.8870256]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Aberdeen",
+        "name": "Aberdeen Snowsports Centre",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "Garthdee Road\nAberdeen\nAB10 7BA",
+        "slopeURL": "http://www.skiaberdeen.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.1274377, 57.1238516]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Nevis Range",
+        "name": "Nevis Range",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "Torlundy\nFort William\nInverness-shire\nPH33 6SQ",
+        "slopeURL": "http://www.nevisrange.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-5.0008671, 56.8521638]
+      }
     }
   ]
 }
