@@ -81,7 +81,7 @@ function renderslopes(slopes) {
         .enter()
         .append("path")
         .datum(function(d) {
-            var slopeObj = circle.radius(0.07).center(d.geometry.coordinates)();
+            var slopeObj = circle.radius(0.065).center(d.geometry.coordinates)();
             slopeObj.location = d.properties.location;
             slopeObj.name = d.properties.name;
             slopeObj.slopeType = d.properties.slopeType;
@@ -112,7 +112,8 @@ function renderslopes(slopes) {
             div.html(str)
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY - 28) + "px");
-        }).on("mouseout", function(d) {
+        })
+        .on("mouseout", function(d) {
             div.transition()
                 .duration(200)
                 .style("opacity", 0);

@@ -599,6 +599,81 @@
         "type": "Point",
         "coordinates": [-1.8626277, 52.4602342]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Tamworth",
+        "name": "SnowDome",
+        "slopeType": "indoor",
+        "surface": "Indoor Snow",
+        "address": "Leisure Island\nRiver Drive\nTamworth\nStaffordshire\nB79 7ND",
+        "slopeURL": "http://www.snowdome.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.6930247, 52.6295832]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Swadlincote",
+        "name": "Swadlincote Ski &amp; Snowboard Centre",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "Sir Herbert Wragg Way\nSwadlincote\nDerbyshire\nDE11 8LP",
+        "slopeURL": "http://www.jnlswadlincote.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.5531048, 52.7700555]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Stoke",
+        "name": "Stoke Ski Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Festival Park\nStoke-on-Trent\nST1 5PU",
+        "slopeURL": "http://www.stokeskicentre.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.1996487, 53.0289082]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kidsgrove",
+        "name": "Kidsgrove Ski Centre",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "Bathpool Park\nKidsgrove\nStoke-on-Trent\nST7 4EF",
+        "slopeURL": "http://www.ski-kidsgrove.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.2447316, 53.0769906]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Wirral",
+        "name": "Oval Ski Club",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Old Chester Road\nBebington\nWirral\nCH63 7LF",
+        "slopeURL": "http://www.ovalskiclub.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.0092732, 53.3590249]
+      }
     }
   ]
 }
