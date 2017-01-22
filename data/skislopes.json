@@ -584,6 +584,21 @@
         "type": "Point",
         "coordinates": [-2.449918, 52.640538]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Sparkbrook",
+        "name": "Ackers Adventure",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Golden Hillock Road\nSparkbrook\nBirmingham\nB11 2PY",
+        "slopeURL": "http://www.ackers-adventure.co.uk/go-ski-get-just-race/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.8626277, 52.4602342]
+      }
     }
   ]
 }
