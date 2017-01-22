@@ -674,6 +674,81 @@
         "type": "Point",
         "coordinates": [-3.0092732, 53.3590249]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Runcorn",
+        "name": "Runcorn SnowSports Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Town Park\nPalace Fields\nRuncorn\nCheshire\nWA7 6PT",
+        "slopeURL": "http://www.runcornskicentre.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.6819988, 53.3249828]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Runcorn",
+        "name": "Halifax Ski &amp; Snowboard Centre",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "The Sportsman Inn\nBradford Old Road\nSwalesmoor/Ploughcroft\nHalifax\nWest Yorkshire\nHX3 6UG",
+        "slopeURL": "http://www.ridehalifax.co.uk/ski_snowboarding_centre_halifax_west_yorkshire/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.860304, 53.741184]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Pendle",
+        "name": "Pendle Ski Club",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Clitheroe Road\nSabden\nClitheroe\nLancashire\nBB7 9HN",
+        "slopeURL": "http://www.pendleskiclub.org/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.3488919, 53.8465041]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Rossendale",
+        "name": "Ski Rossendale",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "Haslingden Old Road\nRawtenstall\nLancashire\nBB4 8RR",
+        "slopeURL": "http://www.skirossendale.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.3018178, 53.7037075]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Kendal",
+        "name": "Kendal SnowSports Club",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "Canal Head N\nKendal\nLA9 7BY",
+        "slopeURL": "http://www.kendalsnowsportsclub.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.7400169, 54.3271688]
+      }
     }
   ]
 }
