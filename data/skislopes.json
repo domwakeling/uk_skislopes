@@ -389,6 +389,66 @@
         "type": "Point",
         "coordinates": [-6.3588769, 54.4750719]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Torquay",
+        "name": "Torquay Alpine Ski Club",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Barton Hall\nKingskerswell Road\nDevon\nTQ2 8JY",
+        "slopeURL": "http://www.skitorquay.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.5568221, 50.4946871]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Exeter",
+        "name": "Exeter &amp; District Ski Club",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Clifton Hill Sports Centre\nClifton Hill\nExeter\nEX1 2DJ",
+        "slopeURL": "http://www.exeterskiclub.org.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.5188082, 50.7272274]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Mendip",
+        "name": "Mendip Snowsport Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Lyncombe Drive\nChurchill\nBS25 5PQ",
+        "slopeURL": "http://www.mendipsnowsport.co.uk/snowsports/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.8155994, 51.3302833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Warmwell",
+        "name": "Warmwell Snowsports Centre",
+        "slopeType": "dry",
+        "surface": "Carpet",
+        "address": "Warmwell\nnr Weymouth\nDorset\nDT2 8JE",
+        "slopeURL": "http://www.parkdeanholidays.co.uk/dorset-holidays/warmwell/warmwell-leisure/snowflex.htm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.3368935, 50.6912342]
+      }
     }
   ]
 }
