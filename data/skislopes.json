@@ -749,6 +749,36 @@
         "type": "Point",
         "coordinates": [-2.7400169, 54.3271688]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Sunderland",
+        "name": "Silksworth Sports Complex &amp; Ski Slope",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Silksworth Lane\nSR3 1PD",
+        "slopeURL": "https://www.everyoneactive.com/centre/silksworth-sports-complex-and-ski-slope/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.414958, 54.8807454]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Lake District",
+        "name": "Lake District Ski Club (Raise)",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal)",
+        "address": "nr Glenridding\n(see website for directions)",
+        "slopeURL": "http://www.ldscsnowski.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.9883711, 54.5445888]
+      }
     }
   ]
 }
