@@ -11,18 +11,29 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <div class="mast-head">
+    <div class="mast-head">
+        <div class="container">
             <p>ukskislopes.com</p>
         </div>
+    </div>
+
+    <div class="container">
 
         <div class="content-title">
-            <p class="lead">Select a slope to see more ...</p>
+            <p class="lead">Welcome to <span class="callout">ukskislopes.com</span>,
+                <strong>the</strong> list of ski slopes in the UK.</p>
         </div>
 
         <div class="content-main">
-            <svg class="chart"></svg>
+            <p>With the success of British skiers and snowboarders at World
+                and Olympic level, there's more people than ever wanting to try
+                it for themselves.</p>
+            <p>There's more than 50 slopes across the UK, including six
+                snow-domes and three 'infinite' rolling slopes &mdash; you'll be
+                surprised how easy it is to give snow-sports a go!</p>
+            <button>See the map</button>
+            <button>Find a slope near me</button>
         </div>
 
         <div class="advert"><p></p></div>
@@ -31,38 +42,9 @@
 
     </div><!-- .container -->
 
-    <div id="slopeModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <table>
-                <tr>
-                    <td colspan="2" id="modalTitle"></td>
-                </tr>
-                <tr class="table-content">
-                    <td class="table-cat">Surface type</td>
-                    <td id="modalSurface" class="cell-content"></td>
-                </tr>
-                <tr class="table-content">
-                    <td class="table-cat">Address</td>
-                    <td id="modalAddress" class="cell-content"></td>
-                </tr>
-                <tr class="table-content">
-                    <td class="table-cat">Website</td>
-                    <td id="modalURL" class="cell-content"></td>
-                </tr>
-        </div>
-
-    </div>
-
     <script src="js/jquery.min.js"></script>
-    <!-- <script src="js/main.js" type="text/javascript"></script> -->
-    <script src="http://d3js.org/d3.v4.min.js"></script>
-    <script src="https://d3js.org/topojson.v2.min.js"></script>
-    <script src="js/modal.js" type="text/javascript"></script>
-    <script src="js/slopes.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
+    <!-- <script src="js/modal.js" type="text/javascript"></script> -->
+    <script src="js/index.js" type="text/javascript"></script>
 
 </body>
 

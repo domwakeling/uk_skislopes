@@ -8,7 +8,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
-  color: #301c03; }
+  color: #482a04; }
 
 h1,
 h2,
@@ -74,19 +74,27 @@ a {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-.content-main {
-  border: 1px solid #f29626;
+.content-main p {
+  padding-bottom: 15px; }
+
+.content-map, .content-main {
   float: left; }
   @media (max-width: 599px) {
-    .content-main {
+    .content-map, .content-main {
       width: 100%; } }
   @media (min-width: 600px) and (max-width: 899px) {
-    .content-main {
+    .content-map, .content-main {
       width: 100%; } }
   @media (min-width: 900px) {
-    .content-main {
+    .content-map, .content-main {
       width: 580px;
       height: 600px; } }
+
+.content-map {
+  border: 1px solid #f29626; }
+
+.callout {
+  color: #f29626; }
 
 .advert {
   background-color: #ccc; }
@@ -142,22 +150,22 @@ div.tooltip {
 
 path {
   stroke: white;
-  stroke-width: 1px; }
+  stroke-width: 1 px; }
 
 path.country {
-  fill: #fbdcb7; }
+  fill: #f9d19f; }
 
 path.slopes.dry {
-  fill: #356291; }
+  fill: #0070A5; }
 
 path.slopes.indoor {
-  fill: darkblue; }
+  fill: #004d72; }
 
 path.slopes.rolling {
-  fill: red; }
+  fill: #784507; }
 
 path.slopes.snow {
-  fill: green; }
+  fill: #008fd3; }
 
 /* STYLES FOR MODAL */
 .modal {

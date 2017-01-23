@@ -13,8 +13,8 @@ function contentHeightForScreenWidth(w) {
 }
 
 function resizeMap() {
-    let width = $('.content-main').width();
-    let height = $('.content-main').height();
+    let width = $('.content-map').width();
+    let height = $('.content-map').height();
     zoomCurr = Math.min(zoomCurr, zoomCurr * width/450, zoomCurr * height/650);
     zoomMin = zoomCurr;
     transCurr = [width/2, height/2];
@@ -33,7 +33,7 @@ function setCopyrightYear() {
 
 $(document).ready(function() {
     setCopyrightYear();
-    $('.content-main').height(contentHeightForScreenWidth($(window).width()));
+    $('.content-map').height(contentHeightForScreenWidth($(window).width()));
     resizeMap();
 });
 
@@ -49,6 +49,6 @@ $(document).on("keydown", function(evt) {
 });
 
 $(window).resize(function() {
-    $('.content-main').height(contentHeightForScreenWidth($(window).width()));
+    $('.content-map').height(contentHeightForScreenWidth($(window).width()));
     resizeMap();
 })

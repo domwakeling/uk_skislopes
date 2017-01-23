@@ -1,8 +1,8 @@
 var mouseOrig;
 var mouseCurr;
 var anglesCurr = [4.5, -54.65, -2];
-var zoomCurr = 3250; // works with 450-wide, change in main.js for viewport size
-var zoomMin = 3250; // works with 450-wide, change in main.js for viewport size
+var zoomCurr = 3400; // works with 450-wide, change in main.js for viewport size
+var zoomMin = 3400; // works with 450-wide, change in main.js for viewport size
 var zoomMax = 10000;
 var mSc = 20; //mouse scale for rotations - higher = less sensitive
 var zoomFac = 200; // factor for zoom sensitivity (higher = less sensitive)
@@ -120,7 +120,7 @@ function renderslopes(slopes) {
 
 function zoomed() {
     d3.event.preventDefault();
-    zoomCurr *= (zoomFac + d3.event.deltaY) / zoomFac;
+    zoomCurr *= (zoomFac - d3.event.deltaY) / zoomFac;
     zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
     projection.scale(zoomCurr);
     refresh();

@@ -17,9 +17,9 @@ $font__line-height-body: 1.5;
 /* COLORS */
 $color__bg-color: #ccc;
 $color__orange: hsl(33, 89%, 55%);
-$color__blue: #356291;
+$color__blue: #0070A5; //356291
 $color__mid-grey: #444;
-$color__body-font-color: darken($color__orange, 45%);
+$color__body-font-color: darken($color__orange, 40%);
 $color__title-font-color: darken($color__orange, 0%);
 $color__link-font-color: $color__orange;
 $border__basic: 1px solid $color__orange;
@@ -159,7 +159,12 @@ a {
 }
 
 .content-main {
-    @include outline-me;
+    p {
+        padding-bottom: 15px;
+    }
+}
+
+.content-map, .content-main {
     float: left;
     @include for-phone-only {
         width: 100%;
@@ -171,6 +176,14 @@ a {
         width: 580px;
         height: 600px;
     }
+}
+
+.content-map {
+    @include outline-me;
+}
+
+.callout {
+    color: $color__orange;
 }
 
 .advert {
@@ -232,12 +245,12 @@ div.tooltip {
 
 path {
     stroke: white;
-    stroke-width: 1px;
+    stroke-width: 1 px;
     // fill: lighten($color__orange, 20%);
 }
 
 path.country {
-    fill: lighten($color__orange, 30%);
+    fill: lighten($color__orange, 25%);
 }
 
 path.slopes.dry {
@@ -245,15 +258,15 @@ path.slopes.dry {
 }
 
 path.slopes.indoor {
-    fill: darkblue;
+    fill: darken($color__blue, 10%);
 }
 
 path.slopes.rolling {
-    fill: red;
+    fill: darken($color__orange, 30%);
 }
 
 path.slopes.snow {
-    fill: green;
+    fill: lighten($color__blue, 9%);
 }
 
 /* STYLES FOR MODAL */
