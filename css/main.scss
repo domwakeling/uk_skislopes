@@ -163,7 +163,40 @@ a {
         padding-bottom: 15px;
     }
 }
+/* BUTTONS ON FRONT PAGE */
+.button-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.btn {
+    border-radius: 3px;
+    border-style: none;
+    vertical-align: middle;
+}
+
+.main-btn {
+    color: white;
+    padding: 5px 10px;
+    background-color: $color__orange;
+    width: 150px;
+    .btn-text {
+        @include font__body-font;
+        font-size: 1.0rem;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        display: inline-block;
+    }
+    .fa {
+        padding-top: 4px;
+        padding-bottom: 8px;
+    }
+    margin: 0 auto;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+}
+
+/* CONTENT HOLDERS */
 .content-map, .content-main {
     float: left;
     @include for-phone-only {
@@ -250,7 +283,8 @@ path {
 }
 
 path.country {
-    fill: lighten($color__orange, 25%);
+    // fill: lighten($color__orange, 25%);
+    fill: lighten($color__orange, 8%);
 }
 
 path.slopes.dry {
@@ -291,13 +325,13 @@ path.slopes.snow {
     border: 1px solid #999;
     border-radius: 5px;
     @include for-phone-only {
-        width: 70%;
+        width: 350px
     };
     @include for-tablet-portait-only {
-        width: 420px;
+        width: 350px;
     };
     @include for-tablet-landscape-up {
-        width: 420px;
+        width: 350px;
     };
 }
 
@@ -316,6 +350,7 @@ path.slopes.snow {
 }
 
 table {
+    min-width: 80%;
     tr.table-content {
         font-size: 0.9rem;
         border-top: $border__basic;

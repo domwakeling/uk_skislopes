@@ -77,6 +77,36 @@ a {
 .content-main p {
   padding-bottom: 15px; }
 
+/* BUTTONS ON FRONT PAGE */
+.button-row {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.btn {
+  border-radius: 3px;
+  border-style: none;
+  vertical-align: middle; }
+
+.main-btn {
+  color: white;
+  padding: 5px 10px;
+  background-color: #f29626;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px; }
+  .main-btn .btn-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.0rem;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display: inline-block; }
+  .main-btn .fa {
+    padding-top: 4px;
+    padding-bottom: 8px; }
+
+/* CONTENT HOLDERS */
 .content-map, .content-main {
   float: left; }
   @media (max-width: 599px) {
@@ -153,7 +183,7 @@ path {
   stroke-width: 1 px; }
 
 path.country {
-  fill: #f9d19f; }
+  fill: #f5a94d; }
 
 path.slopes.dry {
   fill: #0070A5; }
@@ -188,13 +218,13 @@ path.slopes.snow {
   border-radius: 5px; }
   @media (max-width: 599px) {
     .modal-content {
-      width: 70%; } }
+      width: 350px; } }
   @media (min-width: 600px) and (max-width: 899px) {
     .modal-content {
-      width: 420px; } }
+      width: 350px; } }
   @media (min-width: 900px) {
     .modal-content {
-      width: 420px; } }
+      width: 350px; } }
 
 .close {
   color: #aaa;
@@ -207,14 +237,16 @@ path.slopes.snow {
     text-decoration: none;
     cursor: pointer; }
 
-table tr.table-content {
-  font-size: 0.9rem;
-  border-top: 1px solid #f29626; }
-  table tr.table-content td.table-cat {
-    padding-top: 4px;
-    padding-right: 0.5em;
-    font-weight: 500; }
-  table tr.table-content td.cell-content {
-    padding-bottom: 4px; }
+table {
+  min-width: 80%; }
+  table tr.table-content {
+    font-size: 0.9rem;
+    border-top: 1px solid #f29626; }
+    table tr.table-content td.table-cat {
+      padding-top: 4px;
+      padding-right: 0.5em;
+      font-weight: 500; }
+    table tr.table-content td.cell-content {
+      padding-bottom: 4px; }
 
 /*# sourceMappingURL=main.css.map */
