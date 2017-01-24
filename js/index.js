@@ -8,7 +8,6 @@ function contentHeightForScreenWidth(w) {
         let adveH = $('.advert').height();
         let mastH = $('.mast-head').height();
         let titlH = $('.content-title').height();
-        console.log(windH, adveH, mastH, titlH);
         return windH - adveH - mastH - titlH - adjH;
     }
 }
@@ -21,6 +20,14 @@ function setCopyrightYear() {
 $(document).ready(function() {
     setCopyrightYear();
     $('.content-main').height(contentHeightForScreenWidth($(window).width()));
+
+    $('#map').on("click", function() {
+        window.open('./map.html', '_self');
+    });
+    $('#search').on("click", function() {
+        window.open('./search.html', '_self');
+    });
+
 });
 
 $(window).resize(function() {

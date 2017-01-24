@@ -112,6 +112,7 @@ p {
 
 p.lead {
     font-size: 1.2rem;
+    // color: $color__blue;
 }
 
 strong {
@@ -144,12 +145,15 @@ a {
 }
 
 .mast-head {
-    background-color: darken($color__orange, 50%);
+    background-color: darken($color__orange, 48.5%);
     p {
-        color: white;
         font-size: 1.5rem;
         padding-top: 8px;
         padding-bottom: 8px;
+        color: $color__orange;
+        a {
+            color: white;
+        }
     }
 }
 
@@ -173,6 +177,7 @@ a {
     border-radius: 3px;
     border-style: none;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .main-btn {
