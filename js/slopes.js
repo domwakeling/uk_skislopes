@@ -35,9 +35,9 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-// URLs for [1] a 110-m map stored in a GitHub repo and [2] the slopes data in a GitHub repo
+// URLs for [1] a 110-m map stored in a GitHub repo and [2] the slopes data from a Heroku service
 var url1 = "https://raw.githubusercontent.com/domwakeling/uk_skislopes/master/data/world.json";
-var url2 = "https://raw.githubusercontent.com/domwakeling/uk_skislopes/master/data/skislopes.json";
+var url2 = "https://uk-slope-server.herokuapp.com/full";
 
 d3.queue(2)
     .defer(d3.json, url1)
@@ -55,7 +55,9 @@ function renderMap(topology, slopes) {
         .data(topology.features)
         .enter()
         .append("path")
-        .attr("class", "country")
+        .attr("class", function(d) {
+            return (d.properties.ADMIN == "United Kingdom") ? "country" : "country_dim";
+        })
         .attr("d", path);
 
     chart.on("mousedown", mouseDown)

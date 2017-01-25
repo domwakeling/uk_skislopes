@@ -284,12 +284,14 @@ div.tooltip {
 path {
     stroke: white;
     stroke-width: 1 px;
-    // fill: lighten($color__orange, 20%);
 }
 
 path.country {
-    // fill: lighten($color__orange, 25%);
     fill: lighten($color__orange, 8%);
+}
+
+path.country_dim {
+    fill: lighten($color__orange, 20%);
 }
 
 path.slopes.dry {

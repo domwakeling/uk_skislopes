@@ -188,6 +188,9 @@ path {
 path.country {
   fill: #f5a94d; }
 
+path.country_dim {
+  fill: #f8c587; }
+
 path.slopes.dry {
   fill: #0070A5; }
 
