@@ -949,7 +949,7 @@
       "type": "Feature",
       "properties": {
         "location": "Firpark",
-        "name": "Dirpark Ski Centre",
+        "name": "Firpark Ski Centre",
         "slopeType": "dry",
         "surface": "Matting",
         "address": "Firpark\nTillicoultry\nFK13 6PL",
@@ -1003,6 +1003,21 @@
       "geometry": {
         "type": "Point",
         "coordinates": [-5.0008671, 56.8521638]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Lagganlia",
+        "name": "Lagganlia Snowsports School",
+        "slopeType": "snow",
+        "surface": "Snow (seasonal) & Matting",
+        "address": "Kincraig\nKingussie\nPH21 1NG",
+        "slopeURL": "http://www.lagganliasnowsportsschool.org.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.8977002, 57.1164369]
       }
     }
   ]
