@@ -112,7 +112,6 @@ p {
 
 p.lead {
     font-size: 1.2rem;
-    // color: $color__blue;
 }
 
 strong {
@@ -167,7 +166,7 @@ a {
         padding-bottom: 15px;
     }
 }
-/* BUTTONS ON FRONT PAGE */
+/* BUTTONS ON FRONT AND SEARCH PAGE */
 .button-row {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -176,11 +175,11 @@ a {
 .btn {
     border-radius: 3px;
     border-style: none;
-    vertical-align: middle;
     cursor: pointer;
 }
 
 .main-btn {
+    vertical-align: middle;
     color: white;
     padding: 5px 10px;
     background-color: $color__orange;
@@ -201,6 +200,28 @@ a {
     box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
 }
 
+/* SEARCH BAR */
+.search-box {
+    font-size: 1.2rem;
+    font-weight: 300;
+    @include outline-me;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 5px;
+    float: left;
+}
+
+.search-btn {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: white;
+    background-color: $color__orange;
+    width: 34px;
+    margin-left: 0px;
+    float: left;
+}
+
+
 /* CONTENT HOLDERS */
 .content-map, .content-main {
     float: left;
@@ -213,6 +234,13 @@ a {
     @include for-tablet-landscape-up {
         width: 580px;
         height: 600px;
+    }
+}
+
+.content-main {
+    overflow-y: auto;
+    table {
+        margin-top: 10px;
     }
 }
 
@@ -361,6 +389,7 @@ table {
     tr.table-content {
         font-size: 0.9rem;
         border-top: $border__basic;
+
         td.table-cat {
             padding-top: 4px;
             padding-right: 0.5em;
@@ -369,5 +398,11 @@ table {
         td.cell-content {
             padding-bottom: 4px;
         }
+    }
+    tr.table-head {
+        padding-top: 8px;
+    }
+    tr.table-content-last {
+        padding-bottom: 8px;
     }
 }
