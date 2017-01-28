@@ -1,11 +1,20 @@
+const TOUCH_NONE = 0;
+const TOUCH_DRAG = 1;
+const TOUCH_ZOOM = 2;
+
 var mouseOrig;
 var mouseCurr;
+var touchOrig = [];
+var touchCurr = [];
 var anglesCurr = [4.5, -54.65, -2];
 var zoomCurr = 3400; // works with 450-wide, change in main.js for viewport size
 var zoomMin = 3400; // works with 450-wide, change in main.js for viewport size
 var zoomMax = 10000;
 var mSc = 20; //mouse scale for rotations - higher = less sensitive
-var zoomFac = 200; // factor for zoom sensitivity (higher = less sensitive)
+var zoomFacMouse = 200; // factor for zoom sensitivity (higher = less sensitive)
+var zoomFacTouch = 0.6; // factor for touch zoom, fraction, lower = less senstive
+
+var touchMode = TOUCH_NONE;
 
 // arbitrary values here, they will be replaced once document loads
 var width = 450;
@@ -35,22 +44,31 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-// URLs for [1] a 110-m map stored in a GitHub repo and [2] the slopes data from a Heroku service
-var url1 = "https://raw.githubusercontent.com/domwakeling/uk_skislopes/master/data/world.json";
+// URLs for [1] a 110-m map stored locally and [2] the slopes data from a Heroku service
+var url1 = "data/world.json"
 var url2 = "https://uk-slope-server.herokuapp.com/full";
 
-d3.queue(2)
-    .defer(d3.json, url1)
-    .defer(d3.json, url2)
-    .await(function(error, topology, slopes) {
-        if (error) {
+// queue no longer used; instead load map data locally (pretty immediate) and
+// then load the remote data; means that map will be visible and cuts down
+// perceived loading time
+
+d3.json(url1, function(error, topology) {
+    if(error) {
+        console.log(error);
+        throw error;
+    }
+    renderMap(topology);
+    d3.json(url2, function(error, slopes) {
+        if(error) {
             console.log(error);
             throw error;
         }
-        renderMap(topology, slopes);
+        renderSlopes(slopes);
     });
 
-function renderMap(topology, slopes) {
+});
+
+function renderMap(topology) {
     g.selectAll("path.country")
         .data(topology.features)
         .enter()
@@ -66,11 +84,9 @@ function renderMap(topology, slopes) {
     d3.select(window)
         .on("mousemove", mouseMoved)
         .on("mouseup", mouseUp);
-
-    renderslopes(slopes);
 }
 
-function renderslopes(slopes) {
+function renderSlopes(slopes) {
 
     var slopesFixed = slopes.features.filter(function(d) {
         return d.geometry != null
@@ -92,6 +108,7 @@ function renderslopes(slopes) {
         })
         .attr("class", "slopes")
         .attr("class", function(d) {return "slopes " + d.slopeType})
+        .attr("id", function(d) {return d.location})
         .attr("d", path)
 
         .on("mousedown", function(slopeObj) {
@@ -122,7 +139,7 @@ function renderslopes(slopes) {
 
 function zoomed() {
     d3.event.preventDefault();
-    zoomCurr *= (zoomFac - d3.event.deltaY) / zoomFac;
+    zoomCurr *= (zoomFacMouse - d3.event.deltaY) / zoomFacMouse;
     zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
     projection.scale(zoomCurr);
     refresh();
@@ -152,6 +169,120 @@ function mouseUp() {
         transCurr = [transCurr[0] + mouseCurr[0] - mouseOrig[0], transCurr[1] + mouseCurr[1] - mouseOrig[1]];
         mouseOrig = null;
     }
+}
+
+function ongoingTouchIndexById(idToFind) {
+  for (var i = 0; i < touchOrig.length; i++) {
+    var id = touchOrig[i].identifier;
+    if (id == idToFind) {
+      return i;
+    }
+  }
+  return -1;    // not found
+}
+
+function copyTouch(touch) {
+  return { identifier: touch.identifier, pageX: touch.pageX, pageY: touch.pageY };
+}
+
+function handleStart(evt) {
+    evt.preventDefault();
+    var touches = evt.changedTouches;
+    var elem = touches[0].srcElement ? touches[0].srcElement : (touches[0].target ? touches[0].target : null);
+    // react if this is a simple touch on a slope
+    if (touchMode == TOUCH_NONE && touches.length == 1 & /slopes/.test(elem.className.baseVal)) {
+        // make a simulated mouse touch and pass it down to the target
+        var simulatedEvent = document.createEvent("MouseEvent");
+        simulatedEvent.initMouseEvent("mousedown", true, true, window, 1,
+                                  touches[0].screenX, touches[0].screenY,
+                                  touches[0].clientX, touches[0].clientY, false,
+                                  false, false, false, 0/*left*/, null);
+        touches[0].target.dispatchEvent(simulatedEvent);
+    } else {
+        // check if we're starting from fresh
+        if (touchMode == TOUCH_NONE && touchOrig.length == 0) {
+            // check number of touches, set mode and store info
+            if (touches.length == 1) {
+                touchMode = TOUCH_DRAG;
+                touchOrig.push(copyTouch(touches[0]));
+                touchCurr.push(copyTouch(touches[0]));
+            } else if (touches.length == 2) {
+                touchMode = TOUCH_ZOOM;
+                touchOrig.push(copyTouch(touches[0]));
+                touchOrig.push(copyTouch(touches[1]));
+                touchCurr.push(copyTouch(touches[0]));
+                touchCurr.push(copyTouch(touches[1]));
+            }
+        } else if(touchMode == TOUCH_DRAG && touches.length == 1) {
+            // we have a second touch, convert to zoom mode
+            touchOrig.push(copyTouch(touches[0]));
+            touchCurr.push(copyTouch(touches[0]));
+            touchMode = TOUCH_ZOOM;
+        }
+    }
+}
+
+function handleMove(evt) {
+    evt.preventDefault();
+    var touches = evt.changedTouches;
+    // cycle through the touches and update stored info
+    for (var i = 0; i < touches.length; i++) {
+        var idx = ongoingTouchIndexById(touches[i].identifier);
+        if (idx >= 0 && idx < touchMode) {
+            // swap in the new touch
+            touchCurr.splice(idx, 1, copyTouch(touches[i]));
+        }
+    }
+    // now use the info
+    if (touchMode == TOUCH_DRAG) {
+        updateTouchDrag();
+    } else if(touchMode == TOUCH_ZOOM)
+        updateTouchZoom();
+}
+
+function handleEnd(evt) {
+    evt.preventDefault();
+    var touches = evt.changedTouches;
+    for (var i = 0; i < touches.length; i++) {
+        var idx = ongoingTouchIndexById(touches[i].identifier);
+        if (idx >= 0 && idx < touchMode) {
+            // we're lifting a finger which is registered at the moment; all done
+            if (touchMode == TOUCH_DRAG) {
+                transCurr = [transCurr[0] + touchCurr[0].pageX - touchOrig[0].pageX,
+                             transCurr[1] + touchCurr[0].pageY - touchOrig[0].pageY];
+            }
+            touchCurr = [];
+            touchOrig = [];
+            touchMode = TOUCH_NONE;
+        }
+    }
+}
+
+function handleCancel(evt) {
+    evt.preventDefault();
+    var touches = evt.changedTouches;
+    for (var i = 0; i < touches.length; i++) {
+        ongoingTouches.splice(i, 1);
+    }
+}
+
+function updateTouchDrag() {
+    projection.translate([transCurr[0] + touchCurr[0].pageX - touchOrig[0].pageX,
+                          transCurr[1] + touchCurr[0].pageY - touchOrig[0].pageY]);
+    refresh();
+}
+
+function distanceBetween(pointA, pointB) {
+    return Math.sqrt(Math.pow(pointA.pageX - pointB.pageX,2) + Math.pow(pointA.pageY - pointB.pageY,2));
+}
+
+function updateTouchZoom() {
+    var distOrig = distanceBetween(touchOrig[0], touchOrig[1]);
+    var distCurr = distanceBetween(touchCurr[0], touchCurr[1]);
+    zoomCurr *= zoomFacTouch * distCurr / distOrig;
+    zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
+    projection.scale(zoomCurr);
+    refresh();
 }
 
 function refresh() {

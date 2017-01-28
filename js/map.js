@@ -35,6 +35,11 @@ $(document).ready(function() {
     setCopyrightYear();
     $('.content-map').height(contentHeightForScreenWidth($(window).width()));
     resizeMap();
+    var chartDOM = document.getElementsByTagName("svg")[0];
+    chartDOM.addEventListener("touchstart", handleStart, false);
+    chartDOM.addEventListener("touchend", handleEnd, false);
+    chartDOM.addEventListener("touchcancel", handleCancel, false);
+    chartDOM.addEventListener("touchmove", handleMove, false);
 });
 
 $(document).on("keydown", function(evt) {
