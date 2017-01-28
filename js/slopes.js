@@ -7,6 +7,7 @@ var mouseCurr;
 var touchOrig = [];
 var touchCurr = [];
 var anglesCurr = [4.5, -54.65, -2];
+var zoomOrig;
 var zoomCurr = 3400; // works with 450-wide, change in main.js for viewport size
 var zoomMin = 3400; // works with 450-wide, change in main.js for viewport size
 var zoomMax = 10000;
@@ -217,6 +218,7 @@ function handleStart(evt) {
             // we have a second touch, convert to zoom mode
             touchOrig.push(copyTouch(touches[0]));
             touchCurr.push(copyTouch(touches[0]));
+            zoomOrig = zoomCurr;
             touchMode = TOUCH_ZOOM;
         }
     }
@@ -279,7 +281,7 @@ function distanceBetween(pointA, pointB) {
 function updateTouchZoom() {
     var distOrig = distanceBetween(touchOrig[0], touchOrig[1]);
     var distCurr = distanceBetween(touchCurr[0], touchCurr[1]);
-    zoomCurr *= zoomFacTouch * distCurr / distOrig;
+    zoomCurr = zoomOrig * distCurr / distOrig;
     zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
     projection.scale(zoomCurr);
     refresh();
