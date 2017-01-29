@@ -205,17 +205,15 @@ a {
     font-size: 1.2rem;
     font-weight: 300;
     @include outline-me;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-radius: 3px;    
     padding-left: 5px;
     float: left;
 }
 
 .search-btn {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    color: white;
-    background-color: $color__orange;
+    border-radius: 0px;
+    color: $color__orange;
+    background-color: white;
     width: 34px;
     margin-left: 0px;
     float: left;
@@ -239,8 +237,9 @@ a {
 
 .content-main {
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     table {
-        margin-top: 10px;
+        margin: 10px 8px 25px;
     }
 }
 
@@ -399,10 +398,13 @@ table {
             padding-bottom: 4px;
         }
     }
-    tr.table-head {
-        padding-top: 8px;
-    }
+    // tr.table-head {
+    //     padding-top: 8px;
+    // }
     tr.table-content-last {
-        padding-bottom: 8px;
+        td.cell-content {
+            padding-bottom: 15px;
+        }
+    //     padding-bottom: 8px;
     }
 }

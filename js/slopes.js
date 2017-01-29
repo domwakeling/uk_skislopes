@@ -21,6 +21,7 @@ var touchMode = TOUCH_NONE;
 var width = 450;
 var height = 550;
 
+var transOrig = [width / 2, height / 2];
 var transCurr = [width / 2, height / 2];
 
 var projection = d3.geoMercator()
@@ -143,7 +144,14 @@ function zoomed() {
     zoomCurr *= (zoomFacMouse - d3.event.deltaY) / zoomFacMouse;
     zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
     projection.scale(zoomCurr);
+    if (zoomCurr < zoomOrig) {
+        var tempTransX = transOrig[0] - 0.5 * (transOrig[0] - transCurr[0]) * (zoomCurr - zoomMin) / zoomMin;
+        var tempTransY = transOrig[1] - 0.5 * (transOrig[1] - transCurr[1]) * (zoomCurr - zoomMin) / zoomMin;
+        transCurr = [tempTransX, tempTransY];
+        projection.translate(transCurr);
+    }
     refresh();
+    zoomOrig = zoomCurr;
 }
 
 function mouseDown() {
@@ -283,6 +291,12 @@ function updateTouchZoom() {
     var distCurr = distanceBetween(touchCurr[0], touchCurr[1]);
     zoomCurr = zoomOrig * distCurr / distOrig;
     zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
+    if (zoomCurr < zoomOrig) {
+        var tempTransX = transOrig[0] - 0.5 * (transOrig[0] - transCurr[0]) * (zoomCurr - zoomMin) / zoomMin;
+        var tempTransY = transOrig[1] - 0.5 * (transOrig[1] - transCurr[1]) * (zoomCurr - zoomMin) / zoomMin;
+        transCurr = [tempTransX, tempTransY];
+        projection.translate(transCurr);
+    }
     projection.scale(zoomCurr);
     refresh();
 }

@@ -17,6 +17,8 @@ function resizeMap() {
     let height = $('.content-map').height();
     zoomCurr = Math.min(zoomCurr, zoomCurr * width/450, zoomCurr * height/650);
     zoomMin = zoomCurr;
+    zoomOrig = zoomCurr;
+    transOrig = [width/2, height/2];
     transCurr = [width/2, height/2];
 
     projection.scale(zoomCurr).translate([width / 2, height / 2]);

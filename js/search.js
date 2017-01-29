@@ -1,3 +1,22 @@
+const adjH = 42;
+
+function contentHeightForScreenWidth(w) {
+    if (w >= 900) {
+        return 600;
+    } else {
+        let windH = $(window).height();
+        let adveH = $('.advert').height();
+        let mastH = $('.mast-head').height();
+        let titlH = $('.content-title').height();
+        return windH - adveH - mastH - titlH - adjH;
+    }
+}
+
+function setCopyrightYear() {
+    let year = new Date().getFullYear();
+    $('.copyright').html('<p>&copy; ' + year + ' <a href="http://www.domwakeling.com" target="_blank">Dom Wakeling</a></p>');
+}
+
 var rootURL = "https://uk-slope-server.herokuapp.com/search/";
 
 function tableFromSlopeInfo(slopeObj) {
@@ -8,9 +27,9 @@ function tableFromSlopeInfo(slopeObj) {
     retStr = retStr + '<tr class="table-content"><td class="table-cat">Address</td>';
     retStr = retStr + '<td class="cell-content">' + slopeObj.properties.address + '</td>';
     retStr = retStr + '</tr><tr class="table-content table-content-last">';
-    retStr = retStr + '<td class="table-cat">Website</td>';
-    retStr = retStr + '<td class="cell-content">' + slopeObj.properties.slopeURL + '</td>';
-    retStr = retStr + '</tr>';
+    retStr = retStr + '<td class="table-cat">Website</td><td class="cell-content">';
+    retStr = retStr + '<a href="' + slopeObj.properties.slopeURL + '" + target="_blank">';
+    retStr = retStr + 'Link</a></td></tr>';
 
     return retStr;
 }
@@ -24,10 +43,8 @@ function startSearch() {
             if(!data || data == []) {
                 $('.content-main').html("No slopes within 50 miles")
             } else {
-                data.sort(function(a,b) {return a.distance > b.distance});
                 var currHTML = '<table>';
                 for (var i=0; i<data.length; i++) {
-                    console.log(data[i]);
                     currHTML = currHTML + tableFromSlopeInfo(data[i]);
                 }
                 currHTML = currHTML + '</table>';
@@ -38,6 +55,9 @@ function startSearch() {
 }
 
 $(document).ready(function() {
+
+    setCopyrightYear();
+    $('.content-main').height(contentHeightForScreenWidth($(window).width()));
 
     $('#search-btn').on("click", function() {
         this.blur;
@@ -56,3 +76,7 @@ $(document).ready(function() {
     });
 
 });
+
+$(window).resize(function() {
+    $('.content-main').height(contentHeightForScreenWidth($(window).width()));
+})
