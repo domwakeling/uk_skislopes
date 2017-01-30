@@ -1,6 +1,6 @@
-const TOUCH_NONE = 0;
-const TOUCH_DRAG = 1;
-const TOUCH_ZOOM = 2;
+var TOUCH_NONE = 0;
+var TOUCH_DRAG = 1;
+var TOUCH_ZOOM = 2;
 
 var mouseOrig;
 var mouseCurr;
@@ -48,7 +48,8 @@ var div = d3.select("body").append("div")
 
 // URLs for [1] a 110-m map stored locally and [2] the slopes data from a Heroku service
 var url1 = "data/world.json"
-var url2 = "https://uk-slope-server.herokuapp.com/full";
+// var url2 = "https://uk-slope-server.herokuapp.com/full";
+var url2 = "data/skislopes.json"
 
 // queue no longer used; instead load map data locally (pretty immediate) and
 // then load the remote data; means that map will be visible and cuts down

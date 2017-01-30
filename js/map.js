@@ -1,20 +1,20 @@
-const adjH = 22;
+var adjH = 22;
 
 function contentHeightForScreenWidth(w) {
     if (w >= 900) {
         return 600;
     } else {
-        let windH = $(window).height();
-        let adveH = $('.advert').height();
-        let mastH = $('.mast-head').height();
-        let titlH = $('.content-title').height();
+        var windH = $(window).height();
+        var adveH = $('.advert').height();
+        var mastH = $('.mast-head').height();
+        var titlH = $('.content-title').height();
         return windH - adveH - mastH - titlH - adjH;
     }
 }
 
 function resizeMap() {
-    let width = $('.content-map').width();
-    let height = $('.content-map').height();
+    var width = $('.content-map').width();
+    var height = $('.content-map').height();
     zoomCurr = Math.min(zoomCurr, zoomCurr * width/450, zoomCurr * height/650);
     zoomMin = zoomCurr;
     zoomOrig = zoomCurr;
@@ -29,7 +29,7 @@ function resizeMap() {
 }
 
 function setCopyrightYear() {
-    let year = new Date().getFullYear();
+    var year = new Date().getFullYear();
     $('.copyright').html('<p>&copy; ' + year + ' <a href="http://www.domwakeling.com" target="_blank">Dom Wakeling</a></p>');
 }
 

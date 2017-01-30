@@ -2,6 +2,9 @@
 *.css.map
 *.sass-cache/*
 
+#Google authentication
+googlea3119*.html
+
 # Below here taken from recommendations
 
 # Compiled source #
