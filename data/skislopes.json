@@ -1019,6 +1019,21 @@
         "type": "Point",
         "coordinates": [-3.8977002, 57.1164369]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Plas y Brenin",
+        "name": "The National Mountain Sports Centre",
+        "slopeType": "dry",
+        "surface": "Matting",
+        "address": "Capel Curig\nConwy\nLL24 0ET",
+        "slopeURL": "http://www.pyb.co.uk/ski-slope.php"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.9184118, 53.1021847]
+      }
     }
   ]
 }
