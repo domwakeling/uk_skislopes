@@ -64,12 +64,13 @@ a {
 
 .mast-head {
   background-color: #1f1202; }
-  .mast-head p {
+  .mast-head .brand {
+    display: inline-block;
     font-size: 1.5rem;
     padding-top: 8px;
     padding-bottom: 8px;
     color: #f29626; }
-    .mast-head p a {
+    .mast-head .brand a {
       color: white; }
 
 .content-title {
@@ -79,10 +80,29 @@ a {
 .content-main p {
   padding-bottom: 15px; }
 
+.warning {
+  margin-top: 20px; }
+  .warning p {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #888 !important; }
+
+.clearfix {
+  clear: both; }
+
 /* BUTTONS ON FRONT AND SEARCH PAGE */
 .button-row {
   margin-top: 10px;
   margin-bottom: 10px; }
+  .button-row .btn-half-row {
+    width: 50%;
+    float: left; }
+    .button-row .btn-half-row .btn-half-left {
+      float: right;
+      margin-right: 20px; }
+    .button-row .btn-half-row .btn-half-right {
+      float: left;
+      margin-left: 20px; }
 
 .btn {
   border-radius: 3px;
@@ -279,5 +299,107 @@ table {
       padding-bottom: 4px; }
   table tr.table-content-last td.cell-content {
     padding-bottom: 15px; }
+
+/* NAVIGATION BAR */
+button.menu-toggle-button {
+  float: right;
+  width: 45px;
+  margin: 0px auto;
+  padding-left: 9px;
+  margin-right: 9px;
+  margin-top: 0.5rem;
+  background-color: #1f1202;
+  border: 1px solid white; }
+  button.menu-toggle-button:after {
+    clear: right; }
+  button.menu-toggle-button div.icon-bar {
+    background-color: white;
+    border-radius: 2px 2px 2px 2px;
+    height: 2px;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    width: 25px; }
+  @media (min-width: 600px) {
+    button.menu-toggle-button {
+      display: none; } }
+
+.navbar-top-menu, .navbar-collapse {
+  display: none;
+  background-color: #1f1202; }
+  .navbar-top-menu ul, .navbar-top-menu li, .navbar-top-menu a, .navbar-collapse ul, .navbar-collapse li, .navbar-collapse a {
+    color: white; }
+  .navbar-top-menu a:hover, .navbar-collapse a:hover {
+    color: #f29626; }
+  .navbar-top-menu ul ul a, .navbar-collapse ul ul a {
+    font-size: 111%; }
+  .navbar-top-menu ul ul ul li a, .navbar-collapse ul ul ul li a {
+    font-size: 121%; }
+  .navbar-top-menu ul, .navbar-collapse ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+  .navbar-top-menu a, .navbar-collapse a {
+    cursor: pointer; }
+
+@media (min-width: 600px) {
+  .navbar-top-menu {
+    float: right;
+    display: inline; } }
+.navbar-top-menu ul ul {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 2.6em;
+  left: -999em;
+  z-index: 99999;
+  background-color: #301c03;
+  border: none;
+  border-radius: 5px; }
+  .navbar-top-menu ul ul ul {
+    left: -999em;
+    top: 0; }
+    .navbar-top-menu ul ul ul li {
+      width: 150px; }
+  .navbar-top-menu ul ul li {
+    padding: 0;
+    margin-bottom: 0;
+    padding: 0.8em 0.5em 0; }
+    .navbar-top-menu ul ul li:hover > ul, .navbar-top-menu ul ul li.focus > ul {
+      right: 100%; }
+    .navbar-top-menu ul ul li:last-of-type {
+      margin-bottom: 1.0rem; }
+  .navbar-top-menu ul ul a {
+    width: 150px; }
+.navbar-top-menu ul li:hover > ul,
+.navbar-top-menu ul li.focus > ul {
+  left: auto; }
+.navbar-top-menu li {
+  float: left;
+  position: relative;
+  padding: 0.8em 0.5em 0; }
+.navbar-top-menu a {
+  display: block;
+  text-decoration: none; }
+
+.navbar-collapse {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  overflow: auto; }
+
+.navbar-collapse, #menu-copy, #menu-copy.container, #menu-copy.container ul {
+  max-height: 75%; }
+
+#menu-copy ul {
+  display: block;
+  padding: 0.8em 0.5em; }
+  #menu-copy ul ul {
+    display: none;
+    z-index: 99999;
+    background-color: #1f1202; }
+    #menu-copy ul ul ul {
+      display: none; }
+#menu-copy a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

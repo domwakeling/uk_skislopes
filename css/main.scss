@@ -13,12 +13,15 @@ $font__h1-font-size: 2.2rem;
 $font__h2-font-size: 1.8rem;
 $font__h3-font-size: 1.5rem;
 $font__h4-font-size: 1.3rem;
+$font__warning-font-size: 0.9rem;
 $font__line-height-body: 1.5;
+
 /* COLORS */
 $color__bg-color: #ccc;
 $color__orange: hsl(33, 89%, 55%);
 $color__blue: #0070A5; //356291
 $color__mid-grey: #444;
+$color__light-grey: #888;
 $color__body-font-color: darken($color__orange, 40%);
 $color__title-font-color: darken($color__orange, 0%);
 $color__link-font-color: $color__orange;
@@ -26,6 +29,7 @@ $border__basic: 1px solid $color__orange;
 @mixin outline-me {
     border: $border__basic;
 }
+
 /* STRUCTURE */
 $structure__font-pad_horiz: 10px;
 /* SIZE MIXINS 600-900-1200-1800 */
@@ -145,7 +149,8 @@ a {
 
 .mast-head {
     background-color: darken($color__orange, 48.5%);
-    p {
+    .brand {
+        display: inline-block;
         font-size: 1.5rem;
         padding-top: 8px;
         padding-bottom: 8px;
@@ -166,10 +171,37 @@ a {
         padding-bottom: 15px;
     }
 }
+
+.warning {
+    margin-top: 20px;
+    p {
+        font-style: italic;
+        font-size: $font__warning-font-size;
+        color: $color__light-grey !important;
+    }
+}
+
+.clearfix {
+    clear:both;
+}
+
 /* BUTTONS ON FRONT AND SEARCH PAGE */
 .button-row {
     margin-top: 10px;
     margin-bottom: 10px;
+
+    .btn-half-row {
+        width: 50%;
+        float:left;
+        .btn-half-left {
+            float: right;
+            margin-right: 20px;
+        }
+        .btn-half-right {
+            float: left;
+            margin-left: 20px;
+        }
+    }
 }
 
 .btn {
@@ -205,7 +237,7 @@ a {
     font-size: 1.2rem;
     font-weight: 300;
     @include outline-me;
-    border-radius: 3px;    
+    border-radius: 3px;
     padding-left: 5px;
     float: left;
 }
@@ -408,3 +440,6 @@ table {
     //     padding-bottom: 8px;
     }
 }
+
+/* NAVIGATION BAR */
+@import "scss/_navigation.scss";

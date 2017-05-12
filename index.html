@@ -22,11 +22,7 @@
 
 <body>
 
-    <div class="mast-head">
-        <div class="container">
-            <p><a href="./index.html">ski-slopes.uk</a></p>
-        </div>
-    </div>
+<!--#include virtual="/includes/mast_head.html" -->
 
     <div class="container">
 
@@ -38,21 +34,30 @@
         <div class="content-main">
             <p>With the success of British skiers and snowboarders at World
                 and Olympic level, there's more people than ever wanting to try
-                it for themselves.</p>
-            <p>There's more than 50 slopes across the UK, including six
+                snow-sports out for themselves.</p>
+            <p>There are more than 50 slopes across the UK, including six
                 snow-domes and three 'infinite' rolling slopes &mdash; you'll be
                 surprised how easy it is to give snow-sports a go!</p>
             <div class="button-row">
-                <button id="map" class="btn main-btn">
-                    <i class="fa fa-map-o fa-2x"></i>
-                    <span class="btn-text"> Interactive map</span>
-                </button>
+                <div class="btn-half-row">
+                    <button id="map" class="btn main-btn btn-half-left">
+                        <i class="fa fa-map-o fa-2x"></i>
+                        <span class="btn-text"> Interactive map</span>
+                    </button>
+                </div>
+                    <div class="btn-half-row">
+                    <button id="search" class="btn main-btn btn-half-right">
+                        <i class="fa fa-search fa-2x"></i>
+                        <span class="btn-text"> Slopes near me</span>
+                    </button>
+                </div>
             </div>
-            <div class="button-row">
-                <button id="search" class="btn main-btn">
-                    <i class="fa fa-search fa-2x"></i>
-                    <span class="btn-text"> Slopes near me</span>
-                </button>
+            <div class="clearfix"></div>
+            <div id="IE_warning" class="warning">
+                <p>Unfortunately the interactive map doesn't work very well with Internet
+                    Explorer. Please consider using another browser like <a href="https://www.google.com/chrome/"
+                    target="_blank">Google Chrome</a> or <a href="https://www.mozilla.org/en-GB/firefox/products/"
+                    target="_blank">Mozilla Firefox</a>.</p>
             </div>
         </div>
 

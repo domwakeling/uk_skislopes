@@ -33,8 +33,15 @@ function setCopyrightYear() {
     $('.copyright').html('<p>&copy; ' + year + ' <a href="http://www.domwakeling.com" target="_blank">Dom Wakeling</a></p>');
 }
 
+function copyMenu() {
+    var menuItems = $('#navbar-top-menu').html();
+    $('#menu-copy').html(menuItems);
+}
+
 $(document).ready(function() {
     setCopyrightYear();
+    copyMenu();
+
     $('.content-map').height(contentHeightForScreenWidth($(window).width()));
     resizeMap();
     var chartDOM = document.getElementsByTagName("svg")[0];
@@ -42,6 +49,19 @@ $(document).ready(function() {
     chartDOM.addEventListener("touchend", handleEnd, false);
     chartDOM.addEventListener("touchcancel", handleCancel, false);
     chartDOM.addEventListener("touchmove", handleMove, false);
+
+    // make the menu button work
+    $('.menu-toggle-button').click(function() {
+        $('.navbar-collapse').slideToggle(200);
+        $('.menu-toggle-button').blur()
+    })
+
+    $('a.collapse').click(function(e) {
+        e.preventDefault();
+        $this = $(this);
+        $this.next().toggle(200);
+    });
+
 });
 
 $(document).on("keydown", function(evt) {

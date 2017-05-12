@@ -1,0 +1,2 @@
+AddType x-httpd-php54 .php
+AddOutputFilter INCLUDES .html .htm .inc

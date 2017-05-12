@@ -1,0 +1,16 @@
+{
+  "transport": "ftp",
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "ftp.ski-slopes.uk",
+  "port": "21",
+  "target": "/public_html",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "adminftp@233951485731944",
+  "watch": [],
+  "password": "Thrips-Cecum-Glossary"
+}

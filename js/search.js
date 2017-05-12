@@ -17,6 +17,11 @@ function setCopyrightYear() {
     $('.copyright').html('<p>&copy; ' + year + ' <a href="http://www.domwakeling.com" target="_blank">Dom Wakeling</a></p>');
 }
 
+function copyMenu() {
+    var menuItems = $('#navbar-top-menu').html();
+    $('#menu-copy').html(menuItems);
+}
+
 var rootURL = "https://uk-slope-server.herokuapp.com/search/";
 
 function tableFromSlopeInfo(slopeObj) {
@@ -57,6 +62,8 @@ function startSearch() {
 $(document).ready(function() {
 
     setCopyrightYear();
+    copyMenu();
+
     $('.content-main').height(contentHeightForScreenWidth($(window).width()));
 
     $('#search-btn').on("click", function() {
@@ -73,6 +80,18 @@ $(document).ready(function() {
                 this.blur();
             }
         }
+    });
+
+    // make the menu button work
+    $('.menu-toggle-button').click(function() {
+        $('.navbar-collapse').slideToggle(200);
+        $('.menu-toggle-button').blur()
+    })
+
+    $('a.collapse').click(function(e) {
+        e.preventDefault();
+        $this = $(this);
+        $this.next().toggle(200);
     });
 
 });
