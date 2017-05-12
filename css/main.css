@@ -90,6 +90,9 @@ a {
 .clearfix {
   clear: both; }
 
+.subhead {
+  margin-top: 10px; }
+
 /* BUTTONS ON FRONT AND SEARCH PAGE */
 .button-row {
   margin-top: 10px;

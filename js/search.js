@@ -43,10 +43,12 @@ function tableFromSlopeInfo(slopeObj) {
 function startSearch() {
     var searchStr = $('#search-bar').val();
     if(!/^\s*$/.test(searchStr)) { //checks not empty
+        $('#spinner').show()
         var url = rootURL + searchStr;
         $.getJSON(url, function(data){
             if(!data || data == []) {
                 $('.content-main').html("No slopes within 50 miles")
+                $('#spinner').hide()
             } else {
                 var currHTML = '<table>';
                 for (var i=0; i<data.length; i++) {
@@ -54,6 +56,7 @@ function startSearch() {
                 }
                 currHTML = currHTML + '</table>';
                 $('.content-main').html(currHTML);
+                $('#spinner').hide()
             }
         });
     }
@@ -93,6 +96,9 @@ $(document).ready(function() {
         $this = $(this);
         $this.next().toggle(200);
     });
+
+    // hide the spinner
+    $('#spinner').hide()
 
 });
 
