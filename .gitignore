@@ -5,6 +5,9 @@
 #Google authentication
 googlea3119*.html
 
+#Remote sync info
+.remote-sync.json
+
 # Below here taken from recommendations
 
 # Compiled source #

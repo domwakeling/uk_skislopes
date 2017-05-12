@@ -1,76 +1,80 @@
-$color__red: #b91f1a;
-
 $color__inverse_text_color: white;
-
 $navbar__height: 54px;
 $navbar__collapse_height: 50px;
 $navbar__space: 76px;
 $navbar__hamburger_outline_color: $color__inverse_text_color;
 $navbar__hamburger_lines_color: $color__inverse_text_color;
-$navbar__link_color : $color__inverse_text_color;
+$navbar__link_color: $color__inverse_text_color;
 $navbar__link_color_alt: $color__orange;
 $navbar__dropdown_bgcolor: darken($color__orange, 45%);
 $navbar__dropdown_border_color: darken($color__orange, 48%);
-
 @mixin dropshadow {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
-
 @mixin dropborder {
     // border: 2px solid $navbar__dropdown_border_color;
     border: none;
 }
 
 button.menu-toggle-button {
-    float:right;
+    float: right;
     width: 45px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-left: 9px;
     margin-right: 9px;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
     background-color: darken($color__orange, 48.5%);
-	border: 1px solid $navbar__hamburger_outline_color;
-	&:after {clear:right};
+    border: 1px solid $navbar__hamburger_outline_color;
+
+    &:after {
+        clear: right;
+    };
+
     div.icon-bar {
         background-color: $navbar__hamburger_lines_color;
         border-radius: 2px 2px 2px 2px;
         height: 2px;
-        margin-top: 0.3em;
-        margin-bottom: 0.3em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
         width: 25px;
     }
+    border-radius: 4px 4px 4px 4px;
     @include for-tablet-portrait-up {
         display: none;
     }
 }
 
-.navbar-top-menu, .navbar-collapse {
+.navbar-collapse,
+.navbar-top-menu {
     // display is default none, governed then by media queries
     display: none;
-
     // colors common to both
     background-color: darken($color__orange, 48.5%);
-    ul, li , a{
+
+    a,
+    li,
+    ul {
         color: $navbar__link_color;
     }
+
     a:hover {
         color: $navbar__link_color_alt;
     }
-
     // font sizes common to both
     ul ul a {
         font-size: 111%;
     }
+
     ul ul ul li a {
         font-size: 121%;
     }
-
     //other common styling
     ul {
         list-style: none;
-		margin: 0;
-		padding-left: 0;
+        margin: 0;
+        padding-left: 0;
     }
+
     a {
         cursor: pointer;
     }
@@ -82,65 +86,65 @@ button.menu-toggle-button {
         display: inline;
     }
 
-	ul {
-
-		ul {
-			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 2.6em;
-			left: -999em;
-			z-index: 99999;
-			background-color: $navbar__dropdown_bgcolor;
+    ul {
+        ul {
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            float: left;
+            position: absolute;
+            top: 2.6em;
+            left: -999em;
+            z-index: 99999;
+            background-color: $navbar__dropdown_bgcolor;
             @include dropborder;
             border-radius: 5px;
 
-			ul {
-				left: -999em;
-				top: 0;
+            ul {
+                left: -999em;
+                top: 0;
 
                 li {
                     width: 150px;
                 }
-			}
+            }
 
-			li {
-				&:hover > ul,
-				&.focus > ul {
+            li {
+                &.focus > ul,
+                &:hover > ul {
                     // this is what brings the sub-menu and aligns left of box
                     right: 100%;
                     // top: auto;
-				}
+                }
                 padding: 0;
                 margin-bottom: 0;
+
                 &:last-of-type {
                     margin-bottom: 1.0rem;
                 }
                 padding: 0.8em 0.5em 0;
-			}
+            }
 
-			a {
-				width: 150px;
-			}
-		}
+            a {
+                width: 150px;
+            }
+        }
 
-		li:hover > ul,
-		li.focus > ul {
+        li.focus > ul,
+        li:hover > ul {
             // this is the line that over-rides the -999em and makes it visible!
-			left: auto;
-		}
-	}
+            left: auto;
+        }
+    }
 
-	li {
-		float: left;
-		position: relative;
+    li {
+        float: left;
+        position: relative;
         padding: 0.8em 0.5em 0;
-	}
+    }
 
-	a {
-		display: block;
-		text-decoration: none;
-	}
+    a {
+        display: block;
+        text-decoration: none;
+    }
 }
 
 .navbar-collapse {
@@ -150,27 +154,30 @@ button.menu-toggle-button {
     overflow: auto;
 }
 
-.navbar-collapse, #menu-copy, #menu-copy.container, #menu-copy.container ul {
+#menu-copy,
+#menu-copy.container,
+#menu-copy.container ul,
+.navbar-collapse {
     max-height: 75%;
 }
 
 #menu-copy {
-	ul {
-		display: block;
+    ul {
+        display: block;
         padding: 0.8em 0.5em;
 
-		ul {
+        ul {
             display: none;
-			z-index: 99999;
-			background-color: darken($color__orange, 48.5%);
+            z-index: 99999;
+            background-color: darken($color__orange, 48.5%);
 
-			ul {
+            ul {
                 display: none;
-			}
-		}
-	}
+            }
+        }
+    }
 
-	a {
-		text-decoration: none;
-	}
+    a {
+        text-decoration: none;
+    }
 }

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color__orange".
-        on line 11 of /Users/dominicwakeling/Espresso/UK-slopes/css/scss/_navigation.scss
+        on line 8 of /Users/dominicwakeling/Espresso/UK-slopes/css/scss/_navigation.scss
 
-6: $navbar__collapse_height: 50px;
-7: $navbar__space: 76px;
-8: $navbar__hamburger_outline_color: $color__inverse_text_color;
-9: $navbar__hamburger_lines_color: $color__inverse_text_color;
-10: $navbar__link_color : $color__inverse_text_color;
-11: $navbar__link_color_alt: $color__orange;
-12: $navbar__dropdown_bgcolor: darken($color__orange, 45%);
-13: $navbar__dropdown_border_color: darken($color__orange, 48%);
-14: 
-15: @mixin dropshadow {
-16:     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+3: $navbar__collapse_height: 50px;
+4: $navbar__space: 76px;
+5: $navbar__hamburger_outline_color: $color__inverse_text_color;
+6: $navbar__hamburger_lines_color: $color__inverse_text_color;
+7: $navbar__link_color: $color__inverse_text_color;
+8: $navbar__link_color_alt: $color__orange;
+9: $navbar__dropdown_bgcolor: darken($color__orange, 45%);
+10: $navbar__dropdown_border_color: darken($color__orange, 48%);
+11: @mixin dropshadow {
+12:     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+13: }
 
 Backtrace:
-/Users/dominicwakeling/Espresso/UK-slopes/css/scss/_navigation.scss:11
+/Users/dominicwakeling/Espresso/UK-slopes/css/scss/_navigation.scss:8
 /Users/dominicwakeling/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/dominicwakeling/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/dominicwakeling/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:471:in `visit_variable'
@@ -51,4 +51,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color__orange\".\A         on line 11 of /Users/dominicwakeling/Espresso/UK-slopes/css/scss/_navigation.scss\A \A 6: $navbar__collapse_height: 50px;\A 7: $navbar__space: 76px;\A 8: $navbar__hamburger_outline_color: $color__inverse_text_color;\A 9: $navbar__hamburger_lines_color: $color__inverse_text_color;\A 10: $navbar__link_color : $color__inverse_text_color;\A 11: $navbar__link_color_alt: $color__orange;\A 12: $navbar__dropdown_bgcolor: darken($color__orange, 45%);\A 13: $navbar__dropdown_border_color: darken($color__orange, 48%);\A 14: \A 15: @mixin dropshadow {\A 16:     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);"; }
+  content: "Error: Undefined variable: \"$color__orange\".\A         on line 8 of /Users/dominicwakeling/Espresso/UK-slopes/css/scss/_navigation.scss\A \A 3: $navbar__collapse_height: 50px;\A 4: $navbar__space: 76px;\A 5: $navbar__hamburger_outline_color: $color__inverse_text_color;\A 6: $navbar__hamburger_lines_color: $color__inverse_text_color;\A 7: $navbar__link_color: $color__inverse_text_color;\A 8: $navbar__link_color_alt: $color__orange;\A 9: $navbar__dropdown_bgcolor: darken($color__orange, 45%);\A 10: $navbar__dropdown_border_color: darken($color__orange, 48%);\A 11: @mixin dropshadow {\A 12:     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);\A 13: }"; }

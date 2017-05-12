@@ -304,41 +304,53 @@ table {
 button.menu-toggle-button {
   float: right;
   width: 45px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-left: 9px;
   margin-right: 9px;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   background-color: #1f1202;
-  border: 1px solid white; }
+  border: 1px solid white;
+  border-radius: 4px 4px 4px 4px; }
   button.menu-toggle-button:after {
     clear: right; }
   button.menu-toggle-button div.icon-bar {
     background-color: white;
     border-radius: 2px 2px 2px 2px;
     height: 2px;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
     width: 25px; }
   @media (min-width: 600px) {
     button.menu-toggle-button {
       display: none; } }
 
-.navbar-top-menu, .navbar-collapse {
+.navbar-collapse,
+.navbar-top-menu {
   display: none;
   background-color: #1f1202; }
-  .navbar-top-menu ul, .navbar-top-menu li, .navbar-top-menu a, .navbar-collapse ul, .navbar-collapse li, .navbar-collapse a {
+  .navbar-collapse a,
+  .navbar-collapse li,
+  .navbar-collapse ul,
+  .navbar-top-menu a,
+  .navbar-top-menu li,
+  .navbar-top-menu ul {
     color: white; }
-  .navbar-top-menu a:hover, .navbar-collapse a:hover {
+  .navbar-collapse a:hover,
+  .navbar-top-menu a:hover {
     color: #f29626; }
-  .navbar-top-menu ul ul a, .navbar-collapse ul ul a {
+  .navbar-collapse ul ul a,
+  .navbar-top-menu ul ul a {
     font-size: 111%; }
-  .navbar-top-menu ul ul ul li a, .navbar-collapse ul ul ul li a {
+  .navbar-collapse ul ul ul li a,
+  .navbar-top-menu ul ul ul li a {
     font-size: 121%; }
-  .navbar-top-menu ul, .navbar-collapse ul {
+  .navbar-collapse ul,
+  .navbar-top-menu ul {
     list-style: none;
     margin: 0;
     padding-left: 0; }
-  .navbar-top-menu a, .navbar-collapse a {
+  .navbar-collapse a,
+  .navbar-top-menu a {
     cursor: pointer; }
 
 @media (min-width: 600px) {
@@ -364,14 +376,14 @@ button.menu-toggle-button {
     padding: 0;
     margin-bottom: 0;
     padding: 0.8em 0.5em 0; }
-    .navbar-top-menu ul ul li:hover > ul, .navbar-top-menu ul ul li.focus > ul {
+    .navbar-top-menu ul ul li.focus > ul, .navbar-top-menu ul ul li:hover > ul {
       right: 100%; }
     .navbar-top-menu ul ul li:last-of-type {
       margin-bottom: 1.0rem; }
   .navbar-top-menu ul ul a {
     width: 150px; }
-.navbar-top-menu ul li:hover > ul,
-.navbar-top-menu ul li.focus > ul {
+.navbar-top-menu ul li.focus > ul,
+.navbar-top-menu ul li:hover > ul {
   left: auto; }
 .navbar-top-menu li {
   float: left;
@@ -387,7 +399,10 @@ button.menu-toggle-button {
   width: 100%;
   overflow: auto; }
 
-.navbar-collapse, #menu-copy, #menu-copy.container, #menu-copy.container ul {
+#menu-copy,
+#menu-copy.container,
+#menu-copy.container ul,
+.navbar-collapse {
   max-height: 75%; }
 
 #menu-copy ul {
