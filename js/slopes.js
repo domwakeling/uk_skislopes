@@ -143,7 +143,11 @@ function renderSlopes(slopes) {
 
 function zoomed() {
     d3.event.preventDefault();
-    zoomCurr *= (zoomFacMouse - d3.event.deltaY) / zoomFacMouse;
+
+    // wheelDelta is reported in IE, deltaY in most other browsers
+    var dY = (d3.event.deltaY != undefined) ? d3.event.deltaY : d3.event.wheelDelta;
+
+    zoomCurr *= (zoomFacMouse - dY) / zoomFacMouse;
     zoomCurr = Math.min(zoomMax, Math.max(zoomMin, zoomCurr));
     projection.scale(zoomCurr);
     if (zoomCurr < zoomOrig) {

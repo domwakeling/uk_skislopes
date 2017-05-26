@@ -25,15 +25,6 @@ $(document).ready(function() {
         $this.next().toggle(200);
     });
 
-    // check whether we're using IE
-    var ua = navigator.userAgent
-    var M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
-    if(/trident/i.test(M[1])){
-        $('#IE_warning').show()
-    } else {
-        $('#IE_warning').hide()
-    }
-
 });
 
 $(window).resize(function() {

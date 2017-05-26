@@ -39,7 +39,6 @@ $(document).ready(function() {
         $this = $(this);
         $this.next().toggle(200);
     });
-
 });
 
 $(document).on("keydown", function(evt) {
