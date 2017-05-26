@@ -37,7 +37,8 @@ var circle = d3.geoCircle();
 
 var chart = d3.select(".chart")
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+    .attr("overflow", "hidden");
 
 var g = chart.append("g");
 
@@ -46,9 +47,8 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-// URLs for [1] a 110-m map stored locally and [2] the slopes data from a Heroku service
+// URLs for [1] a 110-m map stored locally and [2] the slopes data stored locally
 var url1 = "data/world.json"
-// var url2 = "https://uk-slope-server.herokuapp.com/full";
 var url2 = "data/skislopes.json"
 
 // queue no longer used; instead load map data locally (pretty immediate) and
@@ -67,6 +67,7 @@ d3.json(url1, function(error, topology) {
             throw error;
         }
         renderSlopes(slopes);
+        $('#spinner').hide();
     });
 
 });

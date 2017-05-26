@@ -1,17 +1,5 @@
 var adjH = 22;
 
-function contentHeightForScreenWidth(w) {
-    if (w >= 900) {
-        return 600;
-    } else {
-        var windH = $(window).height();
-        var adveH = $('.advert').height();
-        var mastH = $('.mast-head').height();
-        var titlH = $('.content-title').height();
-        return windH - adveH - mastH - titlH - adjH;
-    }
-}
-
 function resizeMap() {
     var width = $('.content-map').width();
     var height = $('.content-map').height();
@@ -26,16 +14,6 @@ function resizeMap() {
     chart
         .attr("width", width)
         .attr("height", height);
-}
-
-function setCopyrightYear() {
-    var year = new Date().getFullYear();
-    $('.copyright').html('<p>&copy; ' + year + ' <a href="http://www.domwakeling.com" target="_blank">Dom Wakeling</a></p>');
-}
-
-function copyMenu() {
-    var menuItems = $('#navbar-top-menu').html();
-    $('#menu-copy').html(menuItems);
 }
 
 $(document).ready(function() {
