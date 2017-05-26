@@ -175,26 +175,37 @@ a {
 .callout {
   color: #f29626; }
 
-.advert {
-  background-color: #ccc; }
-  @media (max-width: 599px) {
-    .advert {
-      height: 100px;
-      position: absolute;
-      bottom: 0;
-      width: 100%; } }
-  @media (min-width: 600px) and (max-width: 899px) {
-    .advert {
-      height: 90px;
-      position: absolute;
-      bottom: 0;
-      width: 100%; } }
-  @media (min-width: 900px) {
-    .advert {
-      float: right;
-      margin-left: 20px;
-      width: 300px;
-      height: 600px; } }
+@media (max-width: 599px) {
+  .advert {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .advert .imgSq {
+      display: none; }
+    .advert .imgWi {
+      margin-left: 10px; } }
+@media (min-width: 600px) and (max-width: 899px) {
+  .advert {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .advert .imgSq {
+      display: none; }
+    .advert #carouselWi {
+      margin-left: 10px; } }
+@media (min-width: 900px) {
+  .advert {
+    float: right;
+    margin-left: 20px;
+    width: 300px;
+    height: 600px; }
+    .advert .imgWi {
+      display: none; }
+    .advert .imgSq {
+      margin-left: 50px;
+      margin-bottom: 50px; } }
 
 .copyright {
   text-align: right;

@@ -288,25 +288,50 @@ a {
 }
 
 .advert {
-    background-color: $color__bg-color;
+    // background-color: $color__bg-color;
     @include for-phone-only {
         height: 100px;
         position: absolute;
         bottom: 0;
         width: 100%;
+
+        .imgSq {
+            display: none;
+        }
+
+        .imgWi {
+            margin-left: 10px;
+        }
     }
     @include for-tablet-portait-only {
         // clear: both;
-        height: 90px;
+        height: 100px;
         position: absolute;
         bottom: 0;
         width: 100%;
+
+        .imgSq {
+            display: none;
+        }
+
+        #carouselWi {
+            margin-left: 10px;
+        }
     }
     @include for-tablet-landscape-up {
         float: right;
         margin-left: 20px;
         width: 300px;
         height: 600px;
+
+        .imgWi {
+            display: none;
+        }
+
+        .imgSq {
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
     }
 }
 
