@@ -44,9 +44,9 @@ function Carousel(imgID, imgArr, altArr, urlArr) {
 var img200 = ['/images/SSE_200.jpg', '/images/SSS_200.jpg', '/images/SSW_200.jpg'];
 var img100 = ['/images/SSE_100.jpg', '/images/SSS_100.jpg', '/images/SSW_100.jpg', 'images/YLH_100.png'];
 var alt200 = ['Snowsport England', 'Snowsport Scotland', 'Snowsport Wales'];
-var alt100 = [...alt200, 'Your Logo Here ...'];
+var alt100 = ['Snowsport England', 'Snowsport Scotland', 'Snowsport Wales', 'Your Logo Here ...'];
 var url200 = ['http://snowsportengland.org.uk/', 'http://www.snowsportscotland.org/', 'http://www.snowsportwales.co.uk/'];
-var url100 = [...url200, 'mailto:info@domwakeling.com'];
+var url100 = ['http://snowsportengland.org.uk/', 'http://www.snowsportscotland.org/', 'http://www.snowsportwales.co.uk/', 'mailto:info@domwakeling.com'];
 
 $(document).ready(function() {
     var car1 = new Carousel('carouselSq', img200, alt200, url200);
